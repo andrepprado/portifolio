@@ -1,0 +1,1213 @@
+/* -------------------------------------- */
+/* 1. RESET E VARIÁVEIS CSS (TEMA ESCURO) */
+/* -------------------------------------- */
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis para fácil personalização (Tema Escuro) */
+:root {
+    --cor-fundo-principal: #121212;
+    /* Fundo Escuro (Preto) */
+    --cor-primaria: #00bcd4;
+    /* Ciano Vívido */
+    --cor-texto-claro: #f5f5f5;
+    --cor-texto-suave: #aaaaaa;
+    --cor-card-fundo: #1e1e1e;
+    /* Fundo dos Cards/Seções (Cinza Escuro) */
+    --espacamento-padrao: 80px;
+
+    /* Variáveis complexas para sombra e efeitos de brilho */
+    --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --cor-primaria-transparente: rgba(0, 188, 212, 0.4);
+    /* Sombra com brilho azul garantido */
+    --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 10px var(--cor-primaria-transparente);
+}
+
+/* -------------------------------------- */
+/* 2. ESTILOS GLOBAIS */
+/* -------------------------------------- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--cor-fundo-principal);
+    color: var(--cor-texto-claro);
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    /* Ajuste para o header fixo */
+    scroll-margin-top: 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    color: var(--cor-texto-claro);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Botões */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-principal);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: var(--shadow-default);
+}
+
+.btn-primary:hover {
+    background-color: #008c9e;
+    transform: translateY(-2px);
+    color: var(--cor-fundo-principal);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------------------------- */
+/* 3. HEADER & NAVEGAÇÃO (Flexbox) */
+/* -------------------------------------- */
+
+.header {
+    background-color: rgba(18, 18, 18, 0.95);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--cor-card-fundo);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.branding-and-lang {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* FIX TYPEWRITER: Aumenta a largura mínima para o texto mais longo (desktop) */
+    min-width: 400px;
+}
+
+.logo-link {
+    display: block;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    /* Garante que o link ocupe toda a largura definida */
+    width: 100%;
+}
+
+.branding-and-lang h1 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* NOVO: Estilo para o Título Fixo */
+#fixed-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.language-selector {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.lang-btn {
+    background: none;
+    border: 1px solid var(--cor-texto-suave);
+    color: var(--cor-texto-suave);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    margin: 0 2px;
+    line-height: 1;
+}
+
+.lang-btn:hover {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.lang-btn.active {
+    color: var(--cor-fundo-principal);
+    font-weight: 600;
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+/* BOTÃO DE TEMA (NOVO) */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-texto-claro);
+    padding: 5px;
+    margin-left: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    color: var(--cor-primaria);
+    transform: rotate(15deg);
+}
+
+#theme-toggle svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+}
+
+
+/* LINKS DE NAVEGAÇÃO */
+.nav-links {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    /* FIX DESKTOP: Isso garante que o nav-links seja sempre empurrado para a direita, 
+       resolvendo a instabilidade causada pelo TypeWriter. */
+    margin-left: auto;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    font-weight: 400;
+    color: var(--cor-texto-suave);
+    transition: color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-links a:hover {
+    color: var(--cor-primaria);
+    transform: translateY(-1px);
+}
+
+.nav-links .btn-contato {
+    color: var(--cor-fundo-principal);
+    background-color: var(--cor-primaria);
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-left: 20px;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.nav-links .btn-contato:hover {
+    background-color: #008c9e;
+    color: var(--cor-fundo-principal);
+}
+
+/* BOTÃO HAMBURGUER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1200;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background: var(--cor-texto-claro);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Transformação em X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(9px);
+    background: var(--cor-primaria);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-9px);
+    background: var(--cor-primaria);
+}
+
+/* -------------------------------------- */
+/* 4. SEÇÃO HERO */
+/* -------------------------------------- */
+
+.hero {
+    padding: var(--espacamento-padrao) 0 100px 0;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-fundo-principal);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 20px 0 30px 0;
+}
+
+.tagline {
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* -------------------------------------- */
+/* 5. SEÇÕES DE CONTEÚDO (PADRÃO) */
+/* -------------------------------------- */
+
+.about h3,
+.stacks h3,
+.services h3,
+.projetos h3,
+.experience h3,
+.contact h3 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--cor-texto-suave);
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+}
+
+/* NOVO: Estilo melhorado para o Subtítulo na página de Detalhes */
+.subtitle.project-summary-margin {
+    margin-top: 40px;
+    /* Adiciona separação após a grade */
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+    color: var(--cor-texto-claro);
+    /* Mais visível que o suave */
+}
+
+.caption-text {
+    /* NOVO: Estilo para a legenda sob as imagens */
+    display: block;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--cor-texto-suave);
+    margin-top: 10px;
+    /* NOVO: Legenda em Negrito */
+    font-weight: 700;
+}
+
+
+.about {
+    padding: var(--espacamento-padrao) 0;
+    background-color: var(--cor-card-fundo);
+}
+
+.stacks,
+.projetos,
+.contact {
+    padding: var(--espacamento-padrao) 0;
+    background-color: var(--cor-fundo-principal);
+}
+
+.services,
+.experience {
+    padding: var(--espacamento-padrao) 0;
+    background-color: var(--cor-card-fundo);
+}
+
+/* -------------------------------------- */
+/* 6. SOBRE MIM & SKILLS (SKILLS-GRID PADRÃO - 3 COLUNAS) */
+/* -------------------------------------- */
+
+.bio-summary {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--cor-texto-suave);
+    line-height: 1.8;
+}
+
+.bio-summary strong {
+    font-weight: 700;
+}
+
+.skills-grid {
+    /* ESTILO PRINCIPAL DE GRID: 3 COLUNAS, 30PX GAP */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.skill-category {
+    background-color: var(--cor-fundo-principal);
+    padding: 25px;
+    /* Linha lateral azul padrão do INDEX */
+    border-left: 3px solid var(--cor-primaria);
+}
+
+.skill-category h4 {
+    font-size: 1.3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.skill-category p {
+    color: var(--cor-texto-claro);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.skill-category:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--cor-primaria);
+    box-shadow: var(--shadow-hover);
+    filter: drop-shadow(0 0 10px var(--cor-primaria-transparente));
+}
+
+/* NOVO: SOBREPOSIÇÃO DO ESTILO SKILLS PARA A PÁGINA DE DETALHES */
+.project-skills-override {
+    /* MANTÉM A ESTRUTURA GRID INTACTA */
+    /* Remove a limitação de 900px do max-width do .skills-grid para telas maiores */
+    max-width: 1000px;
+    /* Aumenta o limite para garantir que os 3 cards caibam confortavelmente */
+    margin: 40px auto;
+    padding: 0 20px;
+    /* Adiciona padding lateral para telas grandes */
+
+    /* Garante a estabilidade da grade 3x1. */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* Mantém o gap do skills-grid padrão */
+}
+
+.project-skills-override .skill-category {
+    /* Garante a altura do card */
+    height: 100%;
+
+    /* Remove a linha lateral azul do INDEX por solicitação */
+    border-left: none;
+    /* Adiciona borda completa para o visual de "card" */
+    border: 1px solid #282828;
+    text-align: left;
+    /* Alinhamento à esquerda, como na referência */
+
+    /* Ajusta o padding para melhor visualização do texto/subtexto */
+    padding: 25px;
+
+    /* FIX ALINHAMENTO DE ALTURA: Garante que os cards na mesma linha tenham a mesma cor de fundo (corrigido para card-fundo) */
+    background-color: var(--cor-card-fundo);
+}
+
+.project-skills-override .skill-category h4 {
+    /* Título do Projeto (Corrigido para ser mais proeminente e alinhado) */
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.project-skills-override .skill-category p {
+    /* Texto de descrição do card */
+    font-size: 1rem;
+    color: var(--cor-texto-claro);
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* -------------------------------------- */
+/* 7. CARDS INTERATIVOS (Stacks, Services, Projects) */
+/* -------------------------------------- */
+
+.skill-category,
+.stack-card,
+.service-card,
+.projeto-card,
+.contact-item {
+    border-radius: 8px;
+    border: 1px solid #282828;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    z-index: 1;
+}
+
+.stack-card:hover,
+.service-card:hover,
+.projeto-card:hover,
+.contact-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--cor-primaria);
+    /* Garante o brilho azul para todos os cards */
+    box-shadow: var(--shadow-hover);
+    filter: drop-shadow(0 0 10px var(--cor-primaria-transparente));
+}
+
+/* Estilos Específicos para Stacks/Services */
+.stacks-grid,
+.project-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Simplificado para 2 colunas para ser mais robusto */
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.services-grid {
+    display: grid;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.stack-card,
+.service-card {
+    background-color: var(--cor-fundo-principal);
+    padding: 25px;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Alinha o card na grade de informações de projeto ao centro, já que ele está no HERO */
+.project-info-grid .stack-card {
+    text-align: center;
+}
+
+.stack-card h4,
+.service-card h4 {
+    font-size: 1.1rem;
+    color: var(--cor-primaria);
+    margin-bottom: 5px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--cor-texto-claro);
+}
+
+
+/* -------------------------------------- */
+/* 8. PROJETOS */
+/* -------------------------------------- */
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background-color: var(--cor-card-fundo);
+    padding: 20px;
+}
+
+.projeto-thumb {
+    height: 200px;
+    background-color: #333;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-image {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.projeto-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.projeto-card p {
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.link-detalhes {
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+/* -------------------------------------- */
+/* 9. EXPERIÊNCIA */
+/* -------------------------------------- */
+
+.timeline {
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--cor-texto-suave);
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--cor-primaria);
+    border-radius: 50%;
+    border: 4px solid var(--cor-card-fundo);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.2);
+}
+
+.timeline-content h4 {
+    font-size: 1.4rem;
+    color: var(--cor-primaria);
+    margin-bottom: 5px;
+}
+
+.timeline-content .company {
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content .responsibilities-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+    padding-left: 0;
+    font-size: 1rem;
+}
+
+.timeline-content .responsibilities-list li {
+    margin-bottom: 8px;
+    color: var(--cor-texto-claro);
+    line-height: 1.5;
+}
+
+/* -------------------------------------- */
+/* 10. SEÇÃO DE CONTATO */
+/* -------------------------------------- */
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.contact-item {
+    background-color: var(--cor-card-fundo);
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 280px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+}
+
+.contact-item .icon-contact {
+    margin-bottom: 10px;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 6px;
+}
+
+.contact-item p {
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+}
+
+/* -------------------------------------- */
+/* 11. FOOTER */
+/* -------------------------------------- */
+
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid #282828;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+}
+
+/* -------------------------------------- */
+/* 12. EFEITO DE DIGITAÇÃO */
+/* -------------------------------------- */
+
+@keyframes blink {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+/* Removidos os estilos de TypeWriter */
+
+/* -------------------------------------- */
+/* 13. RESPONSIVIDADE (OTIMIZADA) */
+/* -------------------------------------- */
+
+/* Desktop Médio / Tablet Grande */
+@media (max-width: 1024px) {
+    .nav-links {
+        /* Esconde a navegação padrão em telas menores */
+        display: none;
+        /* Remove o margin-left: auto; no mobile/tablet */
+        margin-left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* CORREÇÃO DO DESALINHAMENTO (MOBILE/TABLET): Remove a largura fixa para permitir ajuste */
+    .branding-and-lang {
+        min-width: 0;
+    }
+
+    /* Ajuste para mover o botão de tema no tablet/mobile, se necessário.
+       Mantendo-o perto do menu para não atrapalhar o branding. */
+    .nav-bar {
+        /* Adiciona espaço para o botão de tema */
+        padding-right: 40px;
+    }
+
+    #theme-toggle {
+        /* Posiciona o botão de tema para não colidir com o hamburger */
+        position: absolute;
+        right: 45px;
+        margin-left: 0;
+    }
+
+
+    /* MENU MOBILE ATIVO */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: rgba(18, 18, 18, 0.98);
+        border-top: 1px solid #222;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px 0 20px 0;
+        animation: slideDown 0.3s ease forwards;
+        z-index: 999;
+    }
+
+    .nav-links.active a {
+        margin: 0;
+        padding: 12px 20px;
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-links.active a:last-child {
+        border-bottom: none;
+        margin-top: 10px;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stacks-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Faz a sobreposição da grade de skills usar 2 colunas no tablet */
+    .project-skills-override {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    .grid-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    section[id] {
+        scroll-margin-top: 80px;
+    }
+}
+
+/* Tablet / Celular */
+@media (max-width: 768px) {
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .bio-summary {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        /* No index, 768px já usa 1fr */
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .timeline {
+        margin-left: -10px;
+        padding-left: 0;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-dot {
+        left: 10px;
+    }
+
+    /* CORREÇÃO CHAVE 3: Reduz o tamanho da fonte para encaixar melhor no mobile */
+    #fixed-title {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        height: auto;
+    }
+
+    /* Faz a sobreposição da grade de skills usar 2 colunas no tablet */
+    .project-skills-override {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Celular Pequeno */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Reduz ainda mais a fonte para telas muito pequenas */
+    #fixed-title {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        height: auto;
+    }
+
+    .branding-and-lang {
+        align-items: center;
+        /* REMOVEMOS o width: 100% para permitir o alinhamento na mesma linha */
+        overflow: hidden;
+    }
+
+    .language-selector {
+        margin-top: 10px;
+    }
+
+    .nav-bar {
+        /* Remove o flex-wrap para manter logo e botões na mesma linha */
+        padding-right: 90px;
+        /* Garante espaço para os botões */
+    }
+
+    /* FIX MOBILE: Garante que os botões estejam verticalmente alinhados */
+    .hamburger {
+        position: absolute;
+        top: 20px;
+        /* Posição vertical exata */
+        right: 20px;
+    }
+
+    #theme-toggle {
+        position: absolute;
+        top: 20px;
+        /* Posição vertical exata (mesmo valor do hamburger) */
+        right: 65px;
+        margin-left: 0;
+    }
+
+    .nav-links.active {
+        top: 65px;
+    }
+
+    .bio-summary {
+        font-size: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+    }
+
+    .stacks-grid,
+    .services-grid,
+    .grid-projetos {
+        padding-top: 20px;
+        gap: 15px;
+    }
+
+    /* Faz a sobreposição da grade de skills usar 1 coluna no mobile */
+    .project-skills-override {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* -------------------------------------- */
+/* 14. TEMA CLARO (NOVO) */
+/* -------------------------------------- */
+
+body.light-theme {
+    --cor-fundo-principal: #f5f5f5;
+    --cor-primaria: #00bcd4;
+    --cor-texto-claro: #121212;
+    --cor-texto-suave: #555555;
+    --cor-card-fundo: #ffffff;
+
+    --shadow-default: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --cor-primaria-transparente: rgba(0, 188, 212, 0.2);
+    --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 10px var(--cor-primaria-transparente);
+}
+
+/* Estilo do Header no Tema Claro */
+body.light-theme .header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e0e0e0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+body.light-theme .nav-bar h1 {
+    color: var(--cor-texto-claro);
+}
+
+body.light-theme .nav-links.active {
+    background-color: rgba(255, 255, 255, 0.98);
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .timeline::before {
+    background: var(--cor-texto-suave);
+}
+
+body.light-theme .timeline-dot {
+    border-color: var(--cor-card-fundo);
+}
+
+body.light-theme .skill-category {
+    background-color: var(--cor-card-fundo);
+}
+
+body.light-theme .stack-card,
+body.light-theme .service-card {
+    background-color: var(--cor-card-fundo);
+}
+
+body.light-theme .projeto-card {
+    background-color: var(--cor-card-fundo);
+}
+
+body.light-theme .contact-item {
+    background-color: var(--cor-card-fundo);
+    border: 1px solid #e0e0e0;
+}
+
+body.light-theme .skill-category,
+body.light-theme .stack-card,
+body.light-theme .service-card,
+body.light-theme .projeto-card,
+body.light-item {
+    border: 1px solid #e0e0e0;
+    box-shadow: var(--shadow-default);
+}
+
+body.light-theme .footer {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* -------------------------------------- */
+/* 15. ESTILOS DE DETALHE DE PROJETO (MOVIDO DO HTML) */
+/* -------------------------------------- */
+
+/* CLASSES GERAIS DE ESTRUTURA */
+.project-hero-area {
+    min-height: 40vh;
+    padding-bottom: 50px;
+}
+
+.project-section-padding {
+    padding: var(--espacamento-padrao) 0;
+}
+
+.section-title-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* AJUSTES DE TEXTO */
+.project-title {
+    font-size: 3.5rem;
+}
+
+.project-summary-margin {
+    margin-bottom: 60px;
+}
+
+.project-summary-font {
+    font-size: 1.1rem;
+}
+
+.project-cta-button {
+    margin-top: 30px;
+}
+
+/* GRADE DE FUNÇÕES (3 COLUNAS - USANDO SKILLS-GRID) */
+.project-skills-override {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project-skills-override .skill-category {
+    height: 100%;
+    border-left: none;
+    border: 1px solid #282828;
+    text-align: left;
+    padding: 25px;
+    background-color: var(--cor-card-fundo);
+}
+
+.project-skills-override .skill-category h4 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.project-skills-override .skill-category p {
+    font-size: 1rem;
+    color: var(--cor-texto-claro);
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+/* GALERIA E IMAGENS */
+.gallery-grid {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 40px auto;
+    /* FIX ALINHAMENTO VERTICAL: Garante que o grid estique os itens para a mesma altura */
+    align-items: stretch;
+}
+
+.gallery-item {
+    padding: 0;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* FIX: Garante que a legenda fique no rodapé do item */
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.detail-image-wrapper {
+    margin-bottom: 30px;
+}
+
+.detail-img-full {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+    flex-grow: 1;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.detail-img-full:hover {
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.6),
+        inset 0 0 15px 0 rgba(0, 0, 0, 0.7);
+    transform: scale(1.02);
+}
+
+.project-image {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* SEÇÃO DE TECNOLOGIA SIMPLES */
+.tech-used-container {
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.tech-title {
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    font-size: 1rem;
+    color: var(--cor-texto-suave);
+}
+
+/* NOVO: BOTÃO DE VOLTAR CENTRALIZADO */
+.back-to-home-container {
+    /* Aplicando padding da seção */
+    padding: 30px 0 60px;
+    /* FIX FINAL: Garante que o contêiner centralize o conteúdo inline-block */
+    text-align: center;
+}
+
+/* REGRAS ANTIGAS PARA PREVENÇÃO DE CONFLITO */
+.project-results-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.result-icon {
+    font-size: 2.5rem;
+}
+
+.back-to-projects-container {
+    text-align: center;
+    margin-top: 60px;
+}

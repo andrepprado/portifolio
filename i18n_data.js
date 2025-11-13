@@ -1,0 +1,473 @@
+const translations = {
+    // Chaves para o Idioma Inglês (Padrão)
+    "en": {
+        "nav_stacks": "Stacks",
+        "nav_projects": "Projects",
+        "nav_services": "Services",
+        "nav_about": "About",
+        "nav_contact": "Contact",
+        "nav_experience": "Career",
+
+        // NOVO CONTEÚDO HERO
+        "tagline": "Optimization, Development & Automation",
+        "hero_description": "I translate business complexity into clean code, optimizing workflows and automating results.",
+        "hero_button": "See My Work",
+
+        // CHAVE projects_title
+        "projects_title": "Parallel Projects",
+        "project_cta": "View Case Study →",
+
+        // NOVO CONTEÚDO DETALHE DE PROJETO (CHAVES GENÉRICAS)
+        "buono_page_title": "Buono Cookie - Project Details",
+        "detail_tagline": "Case Study / Optimization",
+        "detail_visit_button": "Visit Online Project",
+
+        // CHAVES DE PÁGINA DE DETALHE (Alinhadas ao seu HTML)
+        "detail_challenge_title": "Challenge and Solution Presented",
+        // FIX: Adicionado <strong> no texto da tradução
+        "buono_challenge_text": "A <strong>Buono Cookie</strong> needed to reduce <strong>friction in the purchasing journey</strong>; the previous ordering process relied on <strong>manual WhatsApp attendance</strong> without <strong>message standards or filtering</strong>. This resulted in repetitive actions and validations. The main goal was to <strong>digitize sales</strong> and <strong>automate initial order communication</strong>, reducing the time spent on manual tasks. This is a simple case of conversion optimization, primarily focused on <strong>user experience (UX)</strong> and <strong>interface (UI)</strong>, with a direct and efficient checkout flow.",
+        "detail_gallery_title": "Project Visualization",
+        "detail_gallery_subtitle": "UX/UI Prototypes and Homepage Images.",
+        "buono_gallery_caption": "The design focused on the mobile experience, creating a light and intuitive menu with integrated WhatsApp order finalization.",
+        "detail_results_title": "Results and Conclusion",
+        "detail_results_subtitle": "Process optimization delivered as software.",
+        "detail_back_button": "← Back to Projects",
+
+        // CHAVES DOS CARDS DE DETALHE
+        "detail_challenge_title_h3": "Challenge and Solution Presented",
+        "detail_card_title_1": "Web Development",
+        "detail_card_desc_1": "HTML, CSS, JavaScript focused on responsive development with priority on Interface and User Experience",
+        "detail_card_title_2": "UX/UI Design",
+        "detail_card_desc_2": "Wireframing, Prototyping, and Customer Journey",
+        "detail_card_title_3": "Checkout Optimization",
+        "detail_card_desc_3": "Checkout flow with integrated summary message via WhatsApp",
+        // CHAVES DE LEGENDAS
+        "detail_caption_1": "<strong>Prototype UX of the Initial Page.</strong>",
+        "detail_caption_2": "<strong>Final Visual of the Initial Page.</strong>",
+
+        // CONTEÚDO SOBRE MIM (Mantido)
+        "about_title": "About Me",
+        "about_summary": "I'm André Luiz Ghiringhelli, a <strong>Process Analyst</strong> with a strong foundation in <strong>Full Stack Development</strong> and Systems Analysis. I specialize in transforming complex requirements into high-performance and manageable digital solutions. I work with both frontend (HTML, CSS, JavaScript, ReactJS) and backend (NodeJS, MySQL), focusing on process optimization and automation (RPA/Python).<br><br><strong>🌍 Open to International Relocation:</strong> Australia, Canada, Spain and Portugal.",
+        "skills_title_1": "Web Development & UX",
+        "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Responsive Web Design",
+        "skills_title_2": "BPM & Automation",
+        "skills_list_2": "Process Mapping (BPMN), RPA (Python/Power Automate), Agile Management (Scrum/Kanban) and Jira.",
+        "skills_title_3": "Data & Infrastructure",
+        "skills_list_3": "MySQL, SQL, ETL/ELT (Pentaho Data Integration), Active Directory, Windows/Linux Server and Helpdesk/Support.",
+
+        // CONTEÚDO STACKS (Mantido)
+        "stacks_title": "My Stacks",
+        "stacks_subtitle": "My commitment to Full Stack Development, Process Management, and Automation.",
+        "stack_1_title": "ReactJS / NodeJS",
+        "stack_1_subtitle": "Development of high-performance full-stack applications.",
+        "stack_2_title": "Python / RPA",
+        "stack_2_subtitle": "Process automation and data manipulation.",
+        "stack_3_title": "BPM / Scrum / Jira",
+        "stack_3_subtitle": "Agile management and process orchestration.",
+        "stack_4_title": "MySQL / SQL",
+        "stack_4_subtitle": "Database Administration, ETL/ELT, and Query Optimization (MySQL/SQL).",
+
+        // CONTEÚDO SERVICES (Mantido)
+        "services_title": "My Services",
+        "services_subtitle": "Crafting innovative strategies to achieve goals and exceed expectations.",
+        "service_1_title": "Process Analysis and Optimization (BPM)",
+        "service_1_description": "Mapping, modeling (BPMN), and continuous improvement of workflows.",
+        "service_2_title": "Full Stack Development",
+        "service_2_description": "Building robust web applications focusing on Frontend (ReactJS) and Backend (NodeJS, MySQL).",
+        "service_3_title": "Robotic Process Automation (RPA)",
+        "service_3_description": "Developing bots in Python/RPA for repetitive tasks and integrations (ETL/ELT).",
+        "service_4_title": "IT Support and Infrastructure",
+        "service_4_description": "Consulting on Active Directory, Windows Server, Linux, and incident resolution (Helpdesk).",
+
+        // CONTEÚDO PROJETOS (Resumo - Mantido)
+        "buono_title": "Buono Cookie (Front-end and Optimization)",
+        "buono_description": "Creation of Digital Menu and Landing Page. Focus on checkout optimization with direct WhatsApp integration, simplifying ordering and conversion.",
+        "espetinho_title": "Espetinho FC (UX/UI and Multi-store)",
+        "espetinho_description": "UX/UI design and prototyping for multi-store digitization. Creation of scalable digital menus for 3 units, with geolocation integration via Waze/Maps.",
+
+        // CONTEÚDO CARREIRA (Mantido)
+        "experience_title": "Professional Experience",
+        "experience_subtitle": "My journey in Analysis, Development, and Process Optimization.",
+        "job_1_title": "Process Analyst",
+        "job_1_company": "Sicoob Mantiqueira | Apr/2022 - Present",
+        "job_1_li_1": "Administration and supervision of processes.",
+        "job_1_li_2": "Process management using tracking tools (Jira/Planner).",
+        "job_1_li_3": "Process mapping and optimization using agile methodologies (Scrum/Kanban/Agile).",
+        "job_1_li_4": "Modeling and monitoring in BPMS (Lecom).",
+        "job_1_li_5": "Frontend Development with HTML, CSS, JavaScript, Python, and MySQL.",
+        "job_1_li_6": "Process automation via RPA with Python.",
+        "job_1_li_7": "Development of dashboards for process management and tracking (Power BI, ViewbAPA).",
+        "job_1_li_8": "Preparation of documentation and training sessions.",
+        "job_2_title": "IT Support Analyst",
+        "job_2_company": "Sicoob Mantiqueira | May/2015 - Apr/2022",
+        "job_2_li_1": "Technical support for Windows/Linux (users and servers).",
+        "job_2_li_2": "Management of Windows Server and Active Directory.",
+        "job_2_li_3": "Systems analysis and incident resolution (Help Desk).",
+        "job_2_li_4": "Comprehensive support in ICT infrastructure (networks, hardware, software).",
+        "job_2_li_5": "Workflow modeling for help desk processes.",
+        "job_2_li_6": "Development of internal tools with HTML, CSS, JavaScript, Python, and MySQL.",
+        "job_2_li_7": "Analysis and prevention of digital fraud.",
+
+        "footer_text": "&copy; 2025, André Ghiringhelli. Developed by a human.",
+        "contact_subtitle": "Let's talk! Choose the channel you prefer:",
+        "contact_whatsapp_label": "WhatsApp",
+        "contact_email_label": "Email",
+        "contact_linkedin_label": "LinkedIn",
+    },
+
+    // Chaves para o Idioma Português do Brasil
+    "pt-BR": {
+        "nav_stacks": "Stacks",
+        "nav_projects": "Projetos",
+        "nav_services": "Serviços",
+        "nav_about": "Sobre",
+        "nav_contact": "Contato",
+        "nav_experience": "Carreira",
+
+        // NOVO CONTEÚDO HERO
+        "tagline": "Automação, Desenvolvimento, Suporte de TI e Otimização",
+        "hero_description": "Eu traduzo a complexidade do negócio em código limpo, otimizando fluxos e automatizando resultados.",
+        "hero_button": "Ver Meus Trabalhos",
+
+        // CHAVE projects_title
+        "projects_title": "Projetos Paralelos",
+        "project_cta": "Ver Case Study →",
+
+        // NOVO CONTEÚDO DETALHE DE PROJETO (CHAVES GENÉRICAS)
+        "buono_page_title": "Buono Cookie - Detalhes do Projeto",
+        "detail_tagline": "Case Study / Otimização",
+        "detail_visit_button": "Visitar Projeto Online",
+        // CHAVES DE PÁGINA DE DETALHE (Alinhadas ao seu HTML)
+        "detail_challenge_title": "Desafio e Solução Apresentada",
+        // FIX: Adicionado <strong> no texto da tradução em PT-BR
+        "buono_challenge_text": "A <strong>Buono Cookie</strong> precisava reduzir a <strong>fricção na jornada de compra</strong>, o processo de pedido anterior era dependente de <strong>atendimentos manuais no WhatsApp</strong> sem <strong>padrão ou filtro de entrada nas mensagens</strong>. Isso resultava em ações e validações repetitivas. O objetivo principal era <strong>digitalizar a venda</strong> e <strong>automatizar a comunicação inicial do pedido</strong>, reduzindo assim o tempo gasto com as tarefas manuais e repetitivas citadas. Esse é um case simples de otimização de conversão, onde o foco principal é a <strong>experiência do usuário (UX)</strong> e a <strong>interface (UI)</strong>, com um fluxo de checkout direto e eficiente.",
+        "detail_solution_title": "A Solução",
+        "detail_gallery_title": "Visualização do Projeto",
+        "detail_results_title": "Resultados e Conclusão",
+        "detail_results_subtitle": "A otimização de processos entregue em forma de software.",
+        "detail_back_button": "← Voltar para Projetos",
+
+        // CHAVES DOS CARDS DE DETALHE
+        "detail_challenge_title_h3": "Desafio e Solução Apresentada",
+        "detail_card_title_1": "Desenvolvimento Web",
+        "detail_card_desc_1": "HTML, CSS, JavaScript focado no desenvolvimento responsivo com prioridade na Interface e na Experiência do Usuário",
+        "detail_card_title_2": "UX/UI Design",
+        "detail_card_desc_2": "Wireframing, Prototipagem e Jornada do Cliente",
+        "detail_card_title_3": "Otimização de Checkout",
+        "detail_card_desc_3": "Fluxo de Checkout com resumo integrado por mensagem via WhatsApp",
+        // Chaves de legendas corrigidas (sem o <strong> redundante)
+        "detail_caption_1": "<strong>Protótipo UX da Página Inicial.</strong>",
+        "detail_caption_2": "<strong>Visual Finalizado da Página Inicial.</strong>",
+        "detail_gallery_subtitle": "Protótipos de UX/UI e Imagens Homepage.",
+
+        // Conteúdo do parágrafo corrigido
+        "buono_solution_text": "Desenvolvemos um Cardápio Digital responsivo com um fluxo de checkout otimizado. O sistema em JavaScript gera um pedido formatado (com itens, preço e endereço) e o envia diretamente ao WhatsApp da loja com um clique, reduzindo o tempo de conversão e eliminando erros manuais.",
+        "buono_gallery_caption": "O design foi focado na experiência mobile, sendo um cardápio leve e intuitivo, com finalização do pedido integrada ao WhatsApp.",
+
+        // CONTEÚDO SOBRE MIM (Mantido)
+        "about_title": "Sobre Mim",
+        "about_summary": "Sou André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma sólida base em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais performáticas e gerenciáveis. Atuo tanto no desenvolvimento de frontend (HTML, CSS, JavaScript, ReactJS) quanto no backend (NodeJS, MySQL), com foco em otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Realocação Internacional:</strong> Austrália, Canadá, Espanha e Portugal.",
+        "skills_title_1": "Desenvolvimento Web & UX",
+        "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Desenvolvimento Responsivo (Mobile First).",
+        "skills_title_2": "BPM & Automação",
+        "skills_list_2": "Mapeamento de Processos (BPMN), RPA (Python/Power Automate), Gerenciamento Ágil (Scrum/Kanban) e Jira.",
+        "skills_title_3": "Dados & Infraestrutura",
+        "skills_list_3": "MySQL, SQL, ETL/ELT (Pentaho Data Integration), Active Directory, Windows/Linux Server e Helpdesk/Suporte.",
+
+        // CONTEÚDO STACKS (Mantido)
+        "stacks_title": "Minhas Stacks",
+        "stacks_subtitle": "Meu compromisso com Desenvolvimento Full Stack, Gestão de Processos e Automação.",
+        "stack_1_title": "ReactJS / NodeJS",
+        "stack_1_subtitle": "Desenvolvimento de aplicações full-stack com alta performance.",
+        "stack_2_title": "Python / RPA",
+        "stack_2_subtitle": "Automação de processos e manipulação de dados.",
+        "stack_3_title": "BPM / Scrum / Jira",
+        "stack_3_subtitle": "Gestão ágil e orquestração de processos.",
+        "stack_4_title": "MySQL / SQL",
+        "stack_4_subtitle": "Administração de Banco de Dados, ETL/ELT e Otimização de Queries (MySQL/SQL).",
+
+        // CONTEÚDO SERVICES (Mantido)
+        "services_title": "Meus Serviços",
+        "services_subtitle": "Criação de estratégias inovadoras para atingir objetivos e superar expectativas.",
+        "service_1_title": "Análise e Otimização de Processos (BPM)",
+        "service_1_description": "Mapeamento, modelagem (BPMN) e melhoria contínua de workflows.",
+        "service_2_title": "Desenvolvimento Full Stack",
+        "service_2_description": "Construção de aplicações web robustas com foco em Front-end (ReactJS) e Back-end (NodeJS, MySQL).",
+        "service_3_title": "Automação Robótica de Processos (RPA)",
+        "service_3_description": "Desenvolvimento de bots em Python/RPA para tarefas repetitivas e integrações (ETL/ELT).",
+        "service_4_title": "Suporte e Infraestrutura de TI",
+        "service_4_description": "Administração em Active Directory, Windows Server, Linux e solução de incidentes (Helpdesk).",
+
+        // CONTEÚDO PROJETOS (Resumo - Mantido)
+        "buono_title": "Buono Cookie (Front-end e Otimização)",
+        "buono_description": "Criação de Cardápio Digital e Landing Page. Foco na otimização do checkout com integração direta via WhatsApp, simplificando o pedido e a conversão.",
+        "espetinho_title": "Espetinho FC (UX/UI e Multilojas)",
+        "espetinho_description": "Design e prototipagem UX/UI para digitalização multilojas. Criação de cardápios digitais escaláveis para 3 unidades, com integração de geolocalização via Waze/Maps.",
+
+        // CONTEÚDO CARREIRA (Mantido)
+        "experience_title": "Experiência Profissional",
+        "experience_subtitle": "Minha trajetória em Análise, Desenvolvimento e Otimização de Processos.",
+        "job_1_title": "Analista de Processos ",
+        "job_1_company": "Sicoob Mantiqueira | Abr/2022 - Presente",
+        "job_1_li_1": "Administração e supervisão de processos.",
+        "job_1_li_2": "Gestão de processos utilizando ferramentas de rastreamento (Jira/Planner).",
+        "job_1_li_3": "Mapeamento e otimização de processos utilizando metodologias ágeis (Scrum/Kanban/Agile).",
+        "job_1_li_4": "Modelagem e monitoramento em BPMS (Lecom).",
+        "job_1_li_5": "Desenvolvimento Frontend com HTML, CSS, JavaScript, Python e MySQL.",
+        "job_1_li_6": "Automação de processos via RPA com Python.",
+        "job_1_li_7": "Desenvolvimento de dashboards para gestão e rastreamento de processos (Power BI, ViewbAPA).",
+        "job_1_li_8": "Preparação de documentação e sessões de treinamento.",
+        "job_2_title": "Analista de Suporte de TI",
+        "job_2_company": "Sicoob Mantiqueira | Mai/2015 - Abr/2022",
+        "job_2_li_1": "Suporte técnico para Windows/Linux (usuários e servidores).",
+        "job_2_li_2": "Gerenciamento de Windows Server e Active Directory.",
+        "job_2_li_3": "Análise de sistemas e resolução de incidentes (Help Desk).",
+        "job_2_li_4": "Suporte abrangente em infraestrutura de TIC (redes, hardware, software).",
+        "job_2_li_5": "Modelagem de fluxo de trabalho para processos de help desk.",
+        "job_2_li_6": "Desenvolvimento de ferramentas internas com HTML, CSS, JavaScript, Python e MySQL.",
+        "job_2_li_7": "Análise e prevenção de fraude digital.",
+
+        "footer_text": "&copy; 2025, André Ghiringhelli. Desenvolvido por um humano.",
+        "contact_subtitle": "Vamos conversar! Escolha o canal que preferir:",
+        "contact_whatsapp_label": "WhatsApp",
+        "contact_email_label": "Email",
+        "contact_linkedin_label": "LinkedIn",
+    },
+
+    // Chaves para o Idioma Português de Portugal
+    "pt-PT": {
+        "nav_stacks": "Tecnologias",
+        "nav_projects": "Projetos",
+        "nav_services": "Serviços",
+        "nav_about": "Sobre",
+        "nav_contact": "Contacto",
+        "nav_experience": "Experiência",
+
+        // NOVO CONTEÚDO HERO
+        "tagline": "Automação, Desenvolvimento, Suporte de TI e Otimização",
+        "hero_description": "Traduzo a complexidade dos negócios em código limpo, otimizando fluxos de trabalho e automatizando resultados.",
+        "hero_button": "Ver o Meu Trabalho",
+
+        // CHAVE projects_title
+        "projects_title": "Projetos Paralelos",
+        "project_cta": "Ver Estudo de Caso →",
+
+        // NOVO CONTEÚDO DETALHE DE PROJETO (CHAVES GENÉRICAS)
+        "buono_page_title": "Buono Cookie - Detalhes do Projeto",
+        "detail_tagline": "Estudo de Caso / Otimização",
+        "detail_visit_button": "Visitar Projeto Online",
+        // CHAVES DE PÁGINA DE DETALHE (Alinhadas ao seu HTML)
+        "detail_challenge_title": "Desafio e Solução Apresentada",
+        "detail_solution_title": "A Solução",
+        "detail_gallery_title": "Visualização do Projeto",
+        "detail_results_title": "Resultados e Conclusão",
+        "detail_results_subtitle": "A otimização de processos entregue em forma de software.",
+        "detail_back_button": "← Voltar para Projetos",
+
+        // CHAVES DOS CARDS DE DETALHE
+        "detail_challenge_title_h3": "Desafio e Solução Apresentada",
+        "detail_card_title_1": "Desenvolvimento Web",
+        "detail_card_desc_1": "HTML, CSS, JavaScript focado no desenvolvimento responsivo com prioridade na Interface e na Experiência do Utilizador",
+        "detail_card_title_2": "UX/UI Design",
+        "detail_card_desc_2": "Wireframing, Prototipagem e Jornada do Cliente",
+        "detail_card_title_3": "Otimização de Checkout",
+        "detail_card_desc_3": "Fluxo de Checkout com resumo integrado por mensagem via WhatsApp",
+        "detail_caption_1": "<strong>Protótipo UX da Página Inicial.</strong>",
+        "detail_caption_2": "<strong>Visual Finalizado da Página Inicial.</strong>",
+        "detail_gallery_subtitle": "Protótipos de UX/UI e Imagens Homepage.",
+
+        // Conteúdo do parágrafo corrigido
+        "buono_challenge_text": "A <strong>Buono Cookie</strong> precisava reduzir o atrito na jornada de compra, o processo de encomenda anterior era lento, dependente de <strong>atendentes manuais no WhatsApp</strong> sem <strong>padrão ou filtro de entrada nas mensagens</strong>. Isso resultava em ações e validações repetitivas. O objetivo era <strong>digitalizar a venda</strong> e <strong>automatizar a comunicação inicial da encomenda</strong>, reduzindo assim o tempo gasto com as tarefas manuais e repetitivas citadas. Esse é um case simples de otimização de conversão, onde o foco principal é a <strong>experiência do utilizador (UX)</strong> e a <strong>interface (UI)</strong>, com um fluxo de checkout direto e eficiente.",
+
+        "buono_solution_text": "Desenvolvemos um Menu Digital responsivo com um fluxo de checkout otimizado. O sistema em JavaScript gera uma encomenda formatada (com itens, preço e morada) e envia-a diretamente ao WhatsApp da loja com um clique, reduzindo o tempo de conversão e eliminando erros manuais.",
+        "buono_gallery_caption": "O design focou na experiência mobile, criando um menu leve e intuitivo. A conversão é a métrica principal.",
+
+        // CONTEÚDO SOBRE MIM (Mantido)
+        "about_title": "Sobre Mim",
+        "about_summary": "Eu sou o André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma base sólida em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais de alto desempenho e fáceis de gerir. Trabalho tanto em frontend (HTML, CSS, JavaScript, ReactJS) quanto em backend (NodeJS, MySQL), com foco na otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Realocação Internacional:</strong> Austrália, Canadá, Espanha e Portugal.",
+        "skills_title_1": "Desenvolvimento Web & UX",
+        "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Desenvolvimento Responsivo (Mobile First).",
+        "skills_title_2": "BPM & Automação",
+        "skills_list_2": "Mapeamento de Processos (BPMN), RPA (Python/Power Automate), Gestão Ágil (Scrum/Kanban) e Jira.",
+        "skills_title_3": "Dados & Infraestrutura",
+        "skills_list_3": "MySQL, SQL, ETL/ELT (Pentaho Data Integration), Active Directory, Windows/Linux Server e Helpdesk/Suporte.",
+
+        // CONTEÚDO STACKS (Mantido)
+        "stacks_title": "As Minhas Tecnologias",
+        "stacks_subtitle": "O Meu compromisso com o Desenvolvimento Full Stack, Gestão de Processos e Automação.",
+        "stack_1_title": "ReactJS / NodeJS",
+        "stack_1_subtitle": "Desenvolvimento de aplicações full-stack de alto desempenho.",
+        "stack_2_title": "Python / RPA",
+        "stack_2_subtitle": "Automação de processos e manipulação de dados.",
+        "stack_3_title": "BPM / Scrum / Jira",
+        "stack_3_subtitle": "Gestão ágil e orquestração de processos.",
+        "stack_4_title": "MySQL / SQL",
+        "stack_4_subtitle": "Administração de Base de Dados, ETL/ELT e Otimização de Queries (MySQL/SQL).",
+
+        // CONTEÚDO SERVICES (Mantido)
+        "services_title": "Os Meus Serviços",
+        "services_subtitle": "Criação de estratégias inovadoras para alcançar objetivos e superar expectativas.",
+        "service_1_title": "Análise e Otimização de Processos (BPM)",
+        "service_1_description": "Mapeamento, modelagem (BPMN) e melhoria contínua de fluxos de trabalho.",
+        "service_2_title": "Desenvolvimento Full Stack",
+        "service_2_description": "Construção de aplicações web robustas com foco em Front-end (ReactJS) e Back-end (NodeJS, MySQL).",
+        "service_3_title": "Automação Robótica de Processos (RPA)",
+        "service_3_description": "Desenvolvimento de bots em Python/RPA para tarefas repetitivas e integrações (ETL/ELT).",
+        "service_4_title": "Suporte e Infraestrutura de TI",
+        "service_4_description": "Consultoria em Active Directory, Windows Server, Linux e resolução de incidentes (Helpdesk).",
+
+        // CONTEÚDO PROJETOS (Resumo - Mantido)
+        "buono_title": "Buono Cookie (Front-end e Otimização)",
+        "buono_description": "Criação de Menu Digital e Landing Page. Foco na otimização da finalização da compra com integração direta via WhatsApp, simplificando o pedido e a conversão.",
+        "espetinho_title": "Espetinho FC (UX/UI e Multilojas)",
+        "espetinho_description": "Design e prototipagem UX/UI para digitalização de multilojas. Criação de menus digitais escaláveis para 3 unidades, com integração de geolocalização via Waze/Maps.",
+
+        // CONTEÚDO CARREIRA (Mantido)
+        "experience_title": "Experiência Profissional",
+        "experience_subtitle": "O Meu percurso em Análise, Desenvolvimento e Otimização de Processos.",
+        "job_1_title": "Analista de Processos ",
+        "job_1_company": "Sicoob Mantiqueira | Abr/2022 - Presente",
+        "job_1_li_1": "Administração e supervisão de processos.",
+        "job_1_li_2": "Gestão de processos utilizando ferramentas de rastreamento (Jira/Planner).",
+        "job_1_li_3": "Mapeamento e otimização de processos utilizando metodologias ágeis (Scrum/Kanban/Agile).",
+        "job_1_li_4": "Modelagem e monitorização em BPMS (Lecom).",
+        "job_1_li_5": "Desenvolvimento Frontend com HTML, CSS, JavaScript, Python e MySQL.",
+        "job_1_li_6": "Automação de processos via RPA com Python.",
+        "job_1_li_7": "Desenvolvimento de dashboards para gestão e rastreamento de processos (Power BI, ViewbAPA).",
+        "job_1_li_8": "Preparação de documentação e sessões de formação.",
+        "job_2_title": "Analista de Suporte de TI",
+        "job_2_company": "Sicoob Mantiqueira | Mai/2015 - Abr/2022",
+        "job_2_li_1": "Suporte técnico para Windows/Linux (utilizadores e servidores).",
+        "job_2_li_2": "Gestão de Windows Server e Active Directory.",
+        "job_2_li_3": "Análise de sistemas e resolução de incidentes (Help Desk).",
+        "job_2_li_4": "Suporte abrangente em infraestrutura de TIC (redes, hardware, software).",
+        "job_2_li_5": "Modelagem de fluxos de trabalho para processos de help desk.",
+        "job_2_li_6": "Desenvolvimento de ferramentas internas com HTML, CSS, JavaScript, Python e MySQL.",
+        "job_2_li_7": "Análise e prevenção de fraude digital.",
+
+        "footer_text": "&copy; 2025, André Ghiringhelli. Desenvolvido por um humano.",
+        "contact_subtitle": "Vamos conversar! Escolha o canal que preferir:",
+        "contact_whatsapp_label": "WhatsApp",
+        "contact_email_label": "Email",
+        "contact_linkedin_label": "LinkedIn",
+    },
+
+    // Chaves para o Idioma Espanhol
+    "es": {
+        "nav_stacks": "Tecnologías",
+        "nav_projects": "Proyectos",
+        "nav_services": "Servicios",
+        "nav_about": "Sobre mí",
+        "nav_contact": "Contacto",
+        "nav_experience": "Carrera",
+
+        // NOVO CONTEÚDO HERO
+        "tagline": "Automatización, Desarrollo y Optimización",
+        "hero_description": "Traduzco la complejidad del negocio en código limpio, optimizando flujos de trabajo y automatizando resultados.",
+        "hero_button": "Ver Mis Trabajos",
+
+        // CHAVE projects_title
+        "projects_title": "Proyectos Paralelos",
+        "project_cta": "Ver Caso de Estudio →",
+
+        // NOVO CONTEÚDO DETALHE DE PROJETO (CHAVES GENÉRICAS)
+        "buono_page_title": "Buono Cookie - Detalles del Proyecto",
+        "buono_title_long": "Buono Cookie: Menú Digital y Optimización de Ventas",
+        "detail_tagline": "Caso de Estudio / Optimización",
+        "detail_visit_button": "Visitar Proyecto Online",
+        // CHAVES DE PÁGINA DE DETALHE (Alinhadas ao seu HTML)
+        "detail_challenge_title": "Desafio e Solução Apresentada",
+        "detail_solution_title": "La Solución",
+        "detail_gallery_title": "Visualización del Proyecto",
+        "detail_results_title": "Resultados y Conclusión",
+        "detail_results_subtitle": "La optimización de procesos entregada como software.",
+        "detail_back_button": "← Volver a Proyectos",
+
+        // CHAVES DOS CARDS DE DETALHE
+        "detail_challenge_title_h3": "Desafio e Solução Apresentada",
+        "detail_card_title_1": "Desarrollo Web",
+        "detail_card_desc_1": "HTML, CSS, JavaScript centrado en el desarrollo responsivo con prioridad en la Interfaz y la Experiencia del Usuario",
+        "detail_card_title_2": "Diseño UX/UI",
+        "detail_card_desc_2": "Wireframing, Prototipado y Trayectoria del Cliente",
+        "detail_card_title_3": "Optimización de Pago",
+        "detail_card_desc_3": "Flujo de pago con resumen integrado por mensaje vía WhatsApp",
+        "detail_caption_1": "<strong>Prototipo UX de la Página Inicial.</strong>",
+        "detail_caption_2": "<strong>Visual Finalizado de la Página Inicial.</strong>",
+        "detail_gallery_subtitle": "Prototipos de UX/UI e Imágenes de la página de inicio.",
+
+
+        // Conteúdo do parágrafo corrigido
+        "buono_challenge_text": "A <strong>Buono Cookie</strong> necesitaba reducir la <strong>fricción en el proceso de compra</strong>. El proceso anterior dependía de <strong>asistentes manuales en WhatsApp</strong> sin <strong>patrón o filtro de entrada en los mensajes</strong>. Esto resultaba en acciones y validaciones repetitivas. El objetivo principal era <strong>digitalizar las ventas</strong> y <strong>automatizar la comunicación inicial del pedido</strong>, reduciendo así el tiempo gastado en tarefas manuales y repetitivas. Este es un caso simple de optimización de conversión, centrado principalmente en la <strong>experiência del usuario (UX)</strong> y la <strong>interfaz (UI)</strong>, con un flujo de pago directo y eficiente.",
+        "buono_solution_text": "Desarrollamos un Menú Digital responsivo con um fluxo de pago optimizado. El sistema JavaScript genera un pedido formateado (con artículos, precio y dirección) y lo envía directamente al WhatsApp de la tienda con un clic, reduciendo el tiempo de conversión y eliminando errores manuales.",
+        "buono_gallery_caption": "El diseño se centró en la experiencia móvil, creando un menú ligero e intuitivo. La conversión es la métrica principal.",
+
+        // CONTEÚDO SOBRE MIM (Mantido)
+        "about_title": "Sobre Mí",
+        "about_summary": "Soy André Luiz Ghiringhelli, un <strong>Analista de Procesos</strong> con una sólida base em <strong>Desarrollo Full Stack</strong> y Análisis de Sistemas. Me especializo en transformar requisitos complejos en soluciones digitales de alto rendimiento y manejables. Trabajo tanto en frontend (HTML, CSS, JavaScript, ReactJS) como en backend (NodeJS, MySQL), centrándome en la optimización de procesos y automatización (RPA/Python).<br><br><strong>🌍 Abierto a Reubicación Internacional:</strong> Australia, Canadá, España y Portugal.",
+        "skills_title_1": "Desarrollo Web & UX",
+        "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Diseño Web Responsivo (Mobile First).",
+        "skills_title_2": "BPM & Automatización",
+        "skills_list_2": "Mapeo de Procesos (BPMN), RPA (Python/Power Automate), Gestión Ágil (Scrum/Kanban) y Jira.",
+        "skills_title_3": "Datos & Infraestrutura",
+        "skills_list_3": "MySQL, SQL, ETL/ELT (Pentaho Data Integration), Active Directory, Windows/Linux Server y Helpdesk/Soporte.",
+
+        // CONTEÚDO STACKS (Mantido)
+        "stacks_title": "Mis Tecnologías",
+        "stacks_subtitle": "Mi compromiso con el Desarrollo Full Stack, la Gestión de Procesos y la Automatización.",
+        "stack_1_title": "ReactJS / NodeJS",
+        "stack_1_subtitle": "Desarrollo de aplicaciones full-stack de alto rendimiento.",
+        "stack_2_title": "Python / RPA",
+        "stack_2_subtitle": "Automatización de procesos y manipulación de datos.",
+        "stack_3_title": "BPM / Scrum / Jira",
+        "stack_3_subtitle": "Gestión ágil y orquestación de procesos.",
+        "stack_4_title": "MySQL / SQL",
+        "stack_4_subtitle": "Administración de Bases de Datos, ETL/ELT y Optimización de Consultas (MySQL/SQL).",
+
+        // CONTEÚDO SERVICES (Mantido)
+        "services_title": "Mis Servicios",
+        "services_subtitle": "Creación de estrategias innovadoras para alcanzar objetivos y superar expectativas.",
+        "service_1_title": "Análisis y Optimización de Procesos (BPM)",
+        "service_1_description": "Mapeo, modelado (BPMN) y mejora continua de flujos de trabajo.",
+        "service_2_title": "Desarrollo Full Stack",
+        "service_2_description": "Construcción de aplicaciones web robustas con foco en Frontend (ReactJS) y Backend (NodeJS, MySQL).",
+        "service_3_title": "Automatización Robótica de Procesos (RPA)",
+        "service_3_description": "Desarrollo de bots en Python/RPA para tareas repetitivas e integraciones (ETL/ELT).",
+        "service_4_title": "Suporte e Infraestrutura de TI",
+        "service_4_description": "Consultoría en Active Directory, Windows Server, Linux y resolución de incidentes (Helpdesk).",
+
+        // CONTEÚDO PROJETOS (Resumo - Mantido)
+        "buono_title": "Buono Cookie (Front-end y Optimización)",
+        "buono_description": "Creación de Menú Digital y Landing Page. Enfoque en la optimización del proceso de pago con integración directa a través de WhatsApp, simplificando el pedido y la conversión.",
+        "espetinho_title": "Espetinho FC (UX/UI y Multitienda)",
+        "espetinho_description": "Diseño y prototipado UX/UI para digitalización multitienda. Creación de menús digitales escalables para 3 unidades, con integración de geolocalización a través de Waze/Maps.",
+
+        // CONTEÚDO CARREIRA (Mantido)
+        "experience_title": "Experiencia Profesional",
+        "experience_subtitle": "Mi trayectoria en Análisis, Desarrollo y Optimización de Procesos.",
+        "job_1_title": "Analista de Procesos",
+        "job_1_company": "Sicoob Mantiqueira | Abr/2022 - Presente",
+        "job_1_li_1": "Administración y supervisión de procesos.",
+        "job_1_li_2": "Gestión de procesos utilizando herramientas de seguimiento (Jira/Planner).",
+        "job_1_li_3": "Mapeo y optimización de procesos utilizando metodologías ágiles (Scrum/Kanban/Agile).",
+        "job_1_li_4": "Modelado y monitorización en BPMS (Lecom).",
+        "job_1_li_5": "Desarrollo Frontend con HTML, CSS, JavaScript, Python y MySQL.",
+        "job_1_li_6": "Automatización de procesos a través de RPA con Python.",
+        "job_1_li_7": "Desarrollo de paneles de control para la gestión y seguimiento de procesos (Power BI, ViewbAPA).",
+        "job_1_li_8": "Preparación de documentación y sesiones de entrenamiento.",
+        "job_2_title": "Analista de Soporte de TI",
+        "job_2_company": "Sicoob Mantiqueira | May/2015 - Abr/2022",
+        "job_2_li_1": "Soporte técnico para Windows/Linux (usuarios y servidores).",
+        "job_2_li_2": "Gestión de Windows Server e Active Directory.",
+        "job_2_li_3": "Análisis de sistemas y resolución de incidentes (Help Desk).",
+        "job_2_li_4": "Soporte integral en infraestructura TIC (redes, hardware, software).",
+        "job_2_li_5": "Modelado de flujos de trabajo para procesos de help desk.",
+        "job_2_li_6": "Desarrollo de herramientas internas con HTML, CSS, JavaScript, Python y MySQL.",
+        "job_2_li_7": "Análisis y prevención de fraude digital.",
+
+        "footer_text": "&copy; 2025, André Ghiringhelli. Desarrollado por un humano.",
+        "contact_subtitle": "¡Hablemos! Elige el canal que prefieras:",
+        "contact_whatsapp_label": "WhatsApp",
+        "contact_email_label": "Correo Electrónico",
+        "contact_linkedin_label": "LinkedIn",
+    }
+};

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preload" as="script" href="i18n_data.js">
+    <link rel="preload" as="script" href="script.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Ghiringhelli - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-bar">
+            <div class="branding-and-lang">
+                <a href="index.html" class="logo-link">
+                    <h1 id="fixed-title">&lt;André Ghiringhelli/&gt;</h1>
+                </a>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pt-BR">PT-BR</button>
+                    <button class="lang-btn" data-lang="pt-PT">PT-PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="mobile-menu">
+                <a href="#about" data-i18n-key="nav_about">Sobre</a>
+                <a href="#stacks" data-i18n-key="nav_stacks">Stacks</a>
+                <a href="#services" data-i18n-key="nav_services">Serviços</a>
+                <a href="#projects" data-i18n-key="nav_projects">Projetos</a>
+                <a href="#experience" data-i18n-key="nav_experience">Carreira</a>
+                <a href="#contact" class="btn-contato" data-i18n-key="nav_contact">Contato</a>
+            </nav>
+
+            <button id="theme-toggle" aria-label="Alternar Tema">
+                <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-moon">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="theme-icon-light" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <p class="tagline" data-i18n-key="tagline"></p>
+                <h2 data-i18n-key="hero_description"></h2>
+                <a href="#projects" class="btn-primary" data-i18n-key="hero_button"></a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h3 data-i18n-key="about_title"></h3>
+                <p class="bio-summary" data-i18n-key="about_summary">
+                </p>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4 data-i18n-key="skills_title_1"></h4>
+                        <p data-i18n-key="skills_list_1"></p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-i18n-key="skills_title_2"></h4>
+                        <p data-i18n-key="skills_list_2"></p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-i18n-key="skills_title_3"></h4>
+                        <p data-i18n-key="skills_list_3"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stacks" class="stacks">
+            <div class="container">
+                <h3 data-i18n-key="stacks_title"></h3>
+                <p class="subtitle" data-i18n-key="stacks_subtitle"></p>
+
+                <div class="stacks-grid">
+                    <div class="stack-card">
+                        <span class="icon">⚡</span>
+                        <h4 data-i18n-key="stack_1_title"></h4>
+                        <p data-i18n-key="stack_1_subtitle"></p>
+                    </div>
+                    <div class="stack-card">
+                        <span class="icon">🐍</span>
+                        <h4 data-i18n-key="stack_2_title"></h4>
+                        <p data-i18n-key="stack_2_subtitle"></p>
+                    </div>
+                    <div class="stack-card">
+                        <span class="icon">📊</span>
+                        <h4 data-i18n-key="stack_3_title"></h4>
+                        <p data-i18n-key="stack_3_subtitle"></p>
+                    </div>
+                    <div class="stack-card">
+                        <span class="icon">🗄️</span>
+                        <h4 data-i18n-key="stack_4_title"></h4>
+                        <p data-i18n-key="stack_4_subtitle"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h3 data-i18n-key="services_title"></h3>
+                <p class="subtitle" data-i18n-key="services_subtitle"></p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="icon">⚙️</span>
+                        <h4 data-i18n-key="service_1_title"></h4>
+                        <p data-i18n-key="service_1_description"></p>
+                    </div>
+                    <div class="service-card">
+                        <span class="icon">💻</span>
+                        <h4 data-i18n-key="service_2_title"></h4>
+                        <p data-i18n-key="service_2_description"></p>
+                    </div>
+                    <div class="service-card">
+                        <span class="icon">🤖</span>
+                        <h4 data-i18n-key="service_3_title"></h4>
+                        <p data-i18n-key="service_3_description"></p>
+                    </div>
+                    <div class="service-card">
+                        <span class="icon">📡</span>
+                        <h4 data-i18n-key="service_4_title"></h4>
+                        <p data-i18n-key="service_4_description"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projetos">
+            <div class="container">
+                <h3 data-i18n-key="projects_title"></h3>
+
+                <div class="grid-projetos">
+                    <a href="buono-cookie.html" class="projeto-card">
+                        <div class="projeto-thumb">
+                            <div class="slider-container" id="slider-buono">
+                                <img src="img/buono1.jpg" alt="Cardápio Buono Slide 1" class="slide-image">
+                                <img src="img/buono2.jpg" alt="Cardápio Buono Slide 2" class="slide-image">
+                                <img src="img/buono3.jpg" alt="Cardápio Buono Slide 3" class="slide-image">
+                                <img src="img/buono4.png" alt="Cardápio Buono Slide 4" class="slide-image">
+                            </div>
+                        </div>
+                        <h4 data-i18n-key="buono_title"></h4>
+                        <p data-i18n-key="buono_description">
+                        </p>
+                    </a>
+
+                    <a href="espetinho-fc.html" class="projeto-card">
+                        <div class="projeto-thumb">
+                            <div class="slider-container" id="slider-espetinho">
+                                <img src="img/espetinho1.png" alt="App Espetinho Slide 1" class="slide-image">
+                                <img src="img/espetinho2.png" alt="App Espetinho Slide 2" class="slide-image">
+                                <img src="img/espetinho3.png" alt="App Espetinho Slide 3" class="slide-image">
+                            </div>
+                        </div>
+                        <h4 data-i18n-key="espetinho_title"></h4>
+                        <p data-i18n-key="espetinho_description">
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h3 data-i18n-key="experience_title"></h3>
+                <p class="subtitle" data-i18n-key="experience_subtitle"></p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n-key="job_1_title"></h4>
+                            <p class="company" data-i18n-key="job_1_company"></p>
+                            <ul class="responsibilities-list">
+                                <li data-i18n-key="job_1_li_1"></li>
+                                <li data-i18n-key="job_1_li_2"></li>
+                                <li data-i18n-key="job_1_li_3"></li>
+                                <li data-i18n-key="job_1_li_4"></li>
+                                <li data-i18n-key="job_1_li_5"></li>
+                                <li data-i18n-key="job_1_li_6"></li>
+                                <li data-i18n-key="job_1_li_7"></li>
+                                <li data-i18n-key="job_1_li_8"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4 data-i18n-key="job_2_title"></h4>
+                            <p class="company" data-i18n-key="job_2_company"></p>
+                            <ul class="responsibilities-list">
+                                <li data-i18n-key="job_2_li_1"></li>
+                                <li data-i18n-key="job_2_li_2"></li>
+                                <li data-i18n-key="job_2_li_3"></li>
+                                <li data-i18n-key="job_2_li_4"></li>
+                                <li data-i18n-key="job_2_li_5"></li>
+                                <li data-i18n-key="job_2_li_6"></li>
+                                <li data-i18n-key="job_2_li_7"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3 data-i18n-key="nav_contact"></h3>
+                <p class="subtitle" data-i18n-key="contact_subtitle"></p>
+
+                <div class="contact-grid">
+                    <a href="https://wa.me/5512991354831" target="_blank" class="contact-item">
+                        <div class="icon-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00bcd4"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12.04 2.003C6.496 2.003 2 6.498 2 12.042c0 1.969.514 3.888 1.487 5.574L2 22l4.49-1.463A10.035 10.035 0 0 0 12.04 22c5.544 0 10.04-4.496 10.04-10.04S17.584 2.003 12.04 2.003zm0 18.4c-1.69 0-3.345-.45-4.786-1.304l-.342-.204-2.667.868.874-2.6-.224-.35a8.14 8.14 0 0 1-1.244-4.269c0-4.519 3.678-8.197 8.196-8.197 4.52 0 8.198 3.678 8.198 8.197s-3.678 8.199-8.198 8.199zm4.59-6.107c-.252-.125-1.482-.73-1.712-.813-.23-.084-.398-.126-.566.126s-.65.812-.796.982-.293.188-.545.062c-.252-.126-1.062-.391-2.022-1.247-.748-.667-1.252-1.491-1.398-1.743-.146-.252-.016-.388.11-.513.113-.113.252-.293.378-.439.126-.146.168-.252.252-.42.084-.168.042-.314-.021-.44-.062-.126-.545-1.314-.748-1.803-.197-.472-.398-.408-.566-.416h-.482a.93.93 0 0 0-.67.314c-.23.252-.878.857-.878 2.09 0 1.233.898 2.426 1.024 2.594.126.168 1.77 2.705 4.292 3.79 2.522 1.085 2.522.723 2.974.68.462-.042 1.482-.604 1.69-1.188.209-.585.209-1.085.146-1.188-.062-.104-.23-.167-.482-.293z" />
+                            </svg>
+                        </div>
+                        <span data-i18n-key="contact_whatsapp_label">WhatsApp</span>
+                        <p>+55 12 99135-4831</p>
+                    </a>
+
+                    <a href="mailto:ghiringhelli.andre@outlook.com" target="_blank" class="contact-item">
+                        <div class="icon-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00bcd4"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12.713l-11.99-7.181v13.453h23.98v-13.453l-11.99 7.181zm11.99-9.713h-23.98l11.99 7.178 11.99-7.178z" />
+                            </svg>
+                        </div>
+                        <span data-i18n-key="contact_email_label">Email</span>
+                        <p>ghiringhelli.andre@outlook.com</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/ghiringhelli-andre" target="_blank" class="contact-item">
+                        <div class="icon-contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00bcd4"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.271c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 10.271h-3v-4.604c0-1.098-.021-2.509-1.527-2.509-1.528 0-1.763 1.195-1.763 2.429v4.684h-3v-9h2.879v1.229h.041c.401-.761 1.379-1.562 2.84-1.562 3.04 0 3.6 2.002 3.6 4.604v4.729z" />
+                            </svg>
+                        </div>
+                        <span data-i18n-key="contact_linkedin_label">LinkedIn</span>
+                        <p>/in/ghiringhelli-andre</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n-key="footer_text"></p>
+        </div>
+    </footer>
+
+    <script src="i18n_data.js"></script>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
