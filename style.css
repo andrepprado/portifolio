@@ -1061,3 +1061,117 @@ body.light-theme .footer {
     text-align: center;
     margin-top: 60px;
 }
+
+/*HERO — LAVA LAMP COM MOVIMENTO "ALEATÓRIO"*/
+
+.hero {
+    position: relative;
+    z-index: 1;
+    padding: var(--espacamento-padrao) 0 100px 0;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-fundo-principal);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    top: 55%;
+    left: 18%;
+
+    background: radial-gradient(circle at center,
+            rgba(0, 188, 212, 0.22),
+            rgba(0, 188, 212, 0.12) 35%,
+            rgba(0, 188, 212, 0.05) 55%,
+            transparent 65%);
+
+    filter: blur(35px);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+
+    animation: lavaDrift 10s ease-in-out infinite;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    top: 25%;
+    right: 16%;
+
+    background: radial-gradient(circle at center,
+            rgba(0, 188, 212, 0.18),
+            rgba(0, 188, 212, 0.08) 40%,
+            transparent 65%);
+
+    filter: blur(40px);
+    opacity: 0.75;
+    pointer-events: none;
+    z-index: 0;
+
+    animation: lavaDriftAlt 16s ease-in-out infinite;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes lavaDrift {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    20% {
+        transform: translate(40px, -25px) scale(1.05);
+    }
+
+    40% {
+        transform: translate(10px, 30px) scale(0.97);
+    }
+
+    60% {
+        transform: translate(-35px, -20px) scale(1.06);
+    }
+
+    80% {
+        transform: translate(-10px, 35px) scale(1.02);
+    }
+
+    100% {
+        transform: translate(30px, 10px) scale(1.04);
+    }
+}
+
+@keyframes lavaDriftAlt {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    20% {
+        transform: translate(-30px, 20px) scale(1.04);
+    }
+
+    40% {
+        transform: translate(25px, -35px) scale(1.02);
+    }
+
+    60% {
+        transform: translate(-15px, 30px) scale(1.07);
+    }
+
+    80% {
+        transform: translate(35px, 15px) scale(0.98);
+    }
+
+    100% {
+        transform: translate(-25px, -25px) scale(1.05);
+    }
+}
