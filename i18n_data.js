@@ -92,7 +92,7 @@ const translations = {
         "process_metric_1_desc": "More than 238 thousand records monitored and managed through process management and continuous improvement routines.",
 
         "process_metric_2_title": "Published processes",
-        "process_metric_2_value": "48+",
+        "process_metric_2_value": "100+",
         "process_metric_2_desc": "Processes mapped, standardized and made available (AS-IS / TO-BE, policies and documentation).",
 
         "process_metric_3_title": "Governance and quality",
@@ -189,7 +189,7 @@ const translations = {
         "process_metric_1_desc": "Mais de 238 mil registros acompanhados/monitorados em rotinas de gestão e melhoria contínua.",
 
         "process_metric_2_title": "Processos publicados",
-        "process_metric_2_value": "48+",
+        "process_metric_2_value": "100+",
         "process_metric_2_desc": "Processos mapeados, padronizados e disponibilizados (AS-IS / TO-BE, políticas e documentação).",
 
         "process_metric_3_title": "Governança e qualidade",
@@ -353,7 +353,7 @@ const translations = {
         "process_metric_1_desc": "Mais de 238 mil registos acompanhados e monitorizados em rotinas de gestão e melhoria contínua.",
 
         "process_metric_2_title": "Processos publicados",
-        "process_metric_2_value": "48+",
+        "process_metric_2_value": "100+",
         "process_metric_2_desc": "Processos mapeados, padronizados e disponibilizados (AS-IS / TO-BE, políticas e documentação).",
 
         "process_metric_3_title": "Governança e qualidade",
@@ -483,7 +483,7 @@ const translations = {
         "process_metric_1_desc": "Más de 238 mil registros monitoreados y gestionados en rutinas de gestión de procesos y mejora continua.",
 
         "process_metric_2_title": "Procesos publicados",
-        "process_metric_2_value": "48+",
+        "process_metric_2_value": "100+",
         "process_metric_2_desc": "Procesos mapeados, estandarizados y puestos a disposición (AS-IS / TO-BE, políticas y documentación).",
 
         "process_metric_3_title": "Gobernanza y calidad",
