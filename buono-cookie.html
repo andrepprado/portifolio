@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preload" as="script" href="i18n_data.js">
+    <link rel="preload" as="script" href="script.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buono Cookie - Detalhes do Projeto</title>
+    <link rel="stylesheet" href="style.css?v=2.3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-bar">
+            <div class="branding-and-lang">
+                <a href="index.html" class="logo-link">
+                    <h1 id="fixed-title">&lt;André Ghiringhelli/&gt;</h1>
+                </a>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="pt-BR">PT-BR</button>
+                    <button class="lang-btn" data-lang="pt-PT">PT-PT</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="mobile-menu">
+                <a href="index.html#about" data-i18n-key="nav_about">Sobre</a>
+                <a href="index.html#stacks" data-i18n-key="nav_stacks">Stacks</a>
+                <a href="index.html#services" data-i18n-key="nav_services">Serviços</a>
+                <a href="index.html#projects" data-i18n-key="nav_projects">Projetos</a>
+                <a href="index.html#experience" data-i18n-key="nav_experience">Carreira</a>
+                <a href="index.html#contact" class="btn-contato" data-i18n-key="nav_contact">Contato</a>
+            </nav>
+
+            <button id="theme-toggle" aria-label="Alternar Tema">
+                <svg id="theme-icon-dark" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-sun">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="about project-section-padding">
+            <div class="container">
+                <h3 class="section-title-center" data-i18n-key="detail_challenge_title_h3">Desafio e Solução Apresentada
+                </h3>
+                <p class="bio-summary project-summary-margin project-summary-font" data-i18n-key="buono_challenge_text">
+                    A Buono Cookie precisava reduzir a fricção na jornada de compra, o
+                    processo de
+                    pedido anterior
+                    era dependente de atendimentos manuais no WhatsApp sem padrão ou filtro de entrada nas mensagens.
+                    Isso
+                    resultava em ações e validações repetitivas.
+                    O objetivo principal era digitalizar a venda e automatizar a comunicação inicial do pedido,
+                    reduzindo assim o tempo gasto com as tarefas manuais e repetitivas citadas. Esse é um case simples
+                    de otimização de conversão, onde o foco principal é a experiência do usuário
+                    (UX) e a interface (UI), com um fluxo de checkout direto e eficiente.
+                </p>
+
+                <div class="skills-grid project-skills-override">
+                    <div class="skill-category">
+                        <h4 data-i18n-key="detail_card_title_1">Desenvolvimento Web</h4>
+                        <p data-i18n-key="detail_card_desc_1">HTML, CSS, JavaScript focado no desenvolvimento responsivo
+                            com prioridade na
+                            Interface e na Experiência do Usuário</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-i18n-key="detail_card_title_2">UX/UI Design</h4>
+                        <p data-i18n-key="detail_card_desc_2">Wireframing, Prototipagem e Jornada do Cliente</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-i18n-key="detail_card_title_3">Otimização de Checkout</h4>
+                        <p data-i18n-key="detail_card_desc_3">Fluxo de Checkout com resumo integrado por mensagem via
+                            WhatsApp</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="gallery" class="stacks project-section-padding">
+            <div class="container">
+                <h3 class="section-title-center" data-i18n-key="detail_gallery_title">Visualização do Projeto</h3>
+                <p class="subtitle" data-i18n-key="detail_gallery_subtitle">Protótipos de UX/UI e Imagens Homepage.</p>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">
+                        <img src="img/buono-proto.png" alt="Protótipo Home" class="detail-img-full project-image">
+                        <p class="caption-text" data-i18n-key="detail_caption_1">Protótipo UX da Página
+                            Inicial.</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/buono-site.png" alt="Cardápio Digital Finalizado"
+                            class="detail-img-full project-image">
+                        <p class="caption-text" data-i18n-key="detail_caption_2">Visual Finalizado da Página
+                            Inicial.</p>
+                    </div>
+
+                </div>
+                <p class="subtitle project-summary-margin project-summary-font" data-i18n-key="buono_gallery_caption">
+                    O design foi focado na experiência mobile, sendo um cardápio leve e intuitivo, com finalização do
+                    pedido integrada ao WhatsApp.
+                </p>
+
+            </div>
+        </section>
+
+        <div class="container back-to-home-container">
+            <a href="index.html#projects" class="btn-primary back-to-home-btn" data-i18n-key="detail_back_button">
+                ← Voltar para Projetos
+            </a>
+        </div>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n-key="footer_text">&copy; 2025, André Ghiringhelli. Desenvolvido por um humano.</p>
+        </div>
+    </footer>
+
+    <script src="i18n_data.js"></script>
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>
