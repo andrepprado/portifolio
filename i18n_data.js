@@ -50,8 +50,7 @@ const translations = {
         "detail_caption_2": "<strong>Final Visual of the Initial Page.</strong>",
 
         "about_title": "About Me",
-        "about_summary": "I'm André Luiz Ghiringhelli, a <strong>Process Analyst</strong> with a strong foundation in <strong>Full Stack Development</strong> and Systems Analysis. I specialize in transforming complex requirements into high-performance and manageable digital solutions. I work with both frontend (HTML, CSS, JavaScript, ReactJS) and backend (NodeJS, MySQL), focusing on process optimization and automation (RPA/Python).<br><br><strong>🌍 Open to International Relocation:</strong> Australia, Canada, Spain and Portugal.",
-        "skills_title_1": "Web Development & UX",
+        "about_summary": "I'm André Luiz Ghiringhelli, a <strong>Process Analyst</strong> with a strong foundation in <strong>Full Stack Development</strong> and Systems Analysis. I specialize in transforming complex requirements into high-performance and manageable digital solutions. I work with both frontend (HTML, CSS, JavaScript, ReactJS) and backend (NodeJS, MySQL), focusing on process optimization and automation (RPA/Python).<br><br><strong>🌍 Open to Global Opportunities:</strong> international remote roles and relocation to strategic markets, including the European Union — especially Portugal, Spain and Ireland — as well as Canada, Australia and LATAM.", "skills_title_1": "Web Development & UX",
         "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Responsive Web Design",
         "skills_title_2": "BPM & Automation",
         "skills_list_2": "Process Mapping (BPMN), RPA (Python/Power Automate), Agile Management (Scrum/Kanban) and Jira.",
@@ -198,8 +197,7 @@ const translations = {
         "process_metric_3_desc": "Criação e manutenção de indicadores, rituais de acompanhamento e planos de ação para evolução do desempenho.",
 
         "about_title": "Sobre Mim",
-        "about_summary": "Sou André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma sólida base em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais performáticas e gerenciáveis. Atuo tanto no desenvolvimento de frontend (HTML, CSS, JavaScript, ReactJS) quanto no backend (NodeJS, MySQL), com foco em otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Realocação Internacional:</strong> Austrália, Canadá, Espanha e Portugal.",
-        "skills_title_1": "Desenvolvimento Web & UX",
+        "about_summary": "Sou André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma sólida base em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais performáticas e gerenciáveis. Atuo tanto no desenvolvimento de frontend (HTML, CSS, JavaScript, ReactJS) quanto no backend (NodeJS, MySQL), com foco em otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Oportunidades Globais:</strong> remoto internacional e realocação para mercados estratégicos, incluindo União Europeia — especialmente Portugal, Espanha e Irlanda — além de Canadá, Austrália e LATAM.", "skills_title_1": "Desenvolvimento Web & UX",
         "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Desenvolvimento Responsivo (Mobile First).",
         "skills_title_2": "BPM & Automação",
         "skills_list_2": "Mapeamento de Processos (BPMN), RPA (Python/Power Automate), Gerenciamento Ágil (Scrum/Kanban) e Jira.",
@@ -313,8 +311,7 @@ const translations = {
         "buono_gallery_caption": "O design focou na experiência mobile, criando um menu leve e intuitivo. A conversão é a métrica principal.",
 
         "about_title": "Sobre Mim",
-        "about_summary": "Eu sou o André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma base sólida em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais de alto desempenho e fáceis de gerir. Trabalho tanto em frontend (HTML, CSS, JavaScript, ReactJS) quanto em backend (NodeJS, MySQL), com foco na otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Realocação Internacional:</strong> Austrália, Canadá, Espanha e Portugal.",
-        "skills_title_1": "Desenvolvimento Web & UX",
+        "about_summary": "Eu sou o André Luiz Ghiringhelli, um <strong>Analista de Processos</strong> com uma base sólida em <strong>Desenvolvimento Full Stack</strong> e Análise de Sistemas. Sou especialista em transformar requisitos complexos em soluções digitais de alto desempenho e fáceis de gerir. Trabalho tanto em frontend (HTML, CSS, JavaScript, ReactJS) quanto em backend (NodeJS, MySQL), com foco na otimização de processos e automação (RPA/Python).<br><br><strong>🌍 Aberto a Oportunidades Globais:</strong> trabalho remoto internacional e realocação para mercados estratégicos, incluindo a União Europeia — especialmente Portugal, Espanha e Irlanda — além do Canadá, Austrália e LATAM.", "skills_title_1": "Desenvolvimento Web & UX",
         "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Desenvolvimento Responsivo (Mobile First).",
         "skills_title_2": "BPM & Automação",
         "skills_list_2": "Mapeamento de Processos (BPMN), RPA (Python/Power Automate), Gestão Ágil (Scrum/Kanban) e Jira.",
@@ -443,8 +440,7 @@ const translations = {
         "buono_gallery_caption": "El diseño se centró en la experiencia móvil, creando un menú ligero e intuitivo. La conversión es la métrica principal.",
 
         "about_title": "Sobre Mí",
-        "about_summary": "Soy André Luiz Ghiringhelli, un <strong>Analista de Procesos</strong> con una sólida base em <strong>Desarrollo Full Stack</strong> y Análisis de Sistemas. Me especializo en transformar requisitos complejos en soluciones digitales de alto rendimiento y manejables. Trabajo tanto en frontend (HTML, CSS, JavaScript, ReactJS) como en backend (NodeJS, MySQL), centrándome en la optimización de procesos y automatización (RPA/Python).<br><br><strong>🌍 Abierto a Reubicación Internacional:</strong> Australia, Canadá, España y Portugal.",
-        "skills_title_1": "Desarrollo Web & UX",
+        "about_summary": "Soy André Luiz Ghiringhelli, un <strong>Analista de Procesos</strong> con una sólida base en <strong>Desarrollo Full Stack</strong> y Análisis de Sistemas. Me especializo en transformar requisitos complejos en soluciones digitales de alto rendimiento y manejables. Trabajo tanto en frontend (HTML, CSS, JavaScript, ReactJS) como en backend (NodeJS, MySQL), centrándome en la optimización de procesos y automatización (RPA/Python).<br><br><strong>🌍 Abierto a Oportunidades Globales:</strong> roles remotos internacionales y reubicación a mercados estratégicos, incluyendo la Unión Europea — especialmente Portugal, España e Irlanda — además de Canadá, Australia y LATAM.", "skills_title_1": "Desarrollo Web & UX",
         "skills_list_1": "HTML, CSS, JavaScript, ReactJS, NodeJS, APIs REST, Diseño Web Responsivo (Mobile First).",
         "skills_title_2": "BPM & Automatización",
         "skills_list_2": "Mapeo de Procesos (BPMN), RPA (Python/Power Automate), Gestión Ágil (Scrum/Kanban) y Jira.",
