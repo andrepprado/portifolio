@@ -147,24 +147,3 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSlider('slider-chale-gabi');
     initializeSlider('slider-duolab-calc');
 });
-
-/* PROJECT-GITHUB-LINKS-START */
-
-document.addEventListener("click", function (event) {
-    const githubLink = event.target.closest(".projeto-github-link");
-
-    if (!githubLink) {
-        return;
-    }
-
-    event.preventDefault();
-    event.stopPropagation();
-
-    const url = githubLink.dataset.githubUrl;
-
-    if (url) {
-        window.open(url, "_blank", "noopener,noreferrer");
-    }
-});
-
-/* PROJECT-GITHUB-LINKS-END */
