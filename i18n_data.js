@@ -8,7 +8,7 @@ const translations = {
         "chale_gabi_description": "Complete landing page for Chalé Gabi, featuring photo gallery, carousel, Google Maps/Waze location, amenities, local guide and booking flow through Airbnb and WhatsApp.",
 
         "duolab_calc_title": "Duo.Lab Calc (3D Printing Calculator)",
-        "duolab_calc_description": "Pricing calculator for 3D printing services, covering filament, weight, print time, quantity, loss margin, accessories, packaging, marketplace fees, profit margin and client quote summary.",
+        "duolab_calc_description": "Complete system for managing 3D printing operations. It combines a cost and pricing calculator covering materials, printing time, energy, depreciation, infrastructure, additional costs, packaging, fees and sales channels. It also includes a Planner for managing and tracking 3D printing orders, organizing production and monitoring ongoing jobs.",
 
         "nav_stacks": "Stacks",
         "nav_projects": "Case Studies",
@@ -136,7 +136,7 @@ const translations = {
         "chale_gabi_description": "Landing page completa para hospedagem no Chalé Gabi, com galeria de fotos, carrossel, localização com Google Maps/Waze, comodidades, guia local e fluxo de reserva via Airbnb e WhatsApp.",
 
         "duolab_calc_title": "Duo.Lab Calc (Calculadora 3D)",
-        "duolab_calc_description": "Calculadora de precificação para impressão 3D, considerando filamento, peso, tempo de impressão, quantidade, perdas, acessórios, embalagem, taxas de marketplace, margem e resumo para cliente.",
+        "duolab_calc_description": "Sistema completo para gestão da operação de impressão 3D. Reúne calculadora de custos e precificação, considerando materiais, tempo de impressão, energia, depreciação, infraestrutura, adicionais, embalagem, taxas e canais de venda. Conta também com um Planner para gestão e controle dos pedidos de impressão 3D, organização da produção e acompanhamento dos trabalhos em andamento.",
 
         "nav_stacks": "Stacks",
         "nav_projects": "Cases",
@@ -267,7 +267,7 @@ const translations = {
         "chale_gabi_description": "Landing page completa para alojamento no Chalé Gabi, com galeria de fotografias, carrossel, localização com Google Maps/Waze, comodidades, guia local e fluxo de reserva via Airbnb e WhatsApp.",
 
         "duolab_calc_title": "Duo.Lab Calc (Calculadora 3D)",
-        "duolab_calc_description": "Calculadora de preços para impressão 3D, considerando filamento, peso, tempo de impressão, quantidade, perdas, acessórios, embalagem, taxas de marketplace, margem e resumo para cliente.",
+        "duolab_calc_description": "Sistema completo para gestão da operação de impressão 3D. Reúne uma calculadora de custos e preços, considerando materiais, tempo de impressão, energia, depreciação, infraestrutura, adicionais, embalagem, taxas e canais de venda. Inclui também um Planner para gestão e controlo das encomendas de impressão 3D, organização da produção e acompanhamento dos trabalhos em curso.",
 
         "nav_stacks": "Tecnologias",
         "nav_projects": "Cases",
@@ -396,7 +396,7 @@ const translations = {
         "chale_gabi_description": "Landing page completa para hospedaje en Chalé Gabi, con galería de fotos, carrusel, ubicación con Google Maps/Waze, comodidades, guía local y flujo de reserva vía Airbnb y WhatsApp.",
 
         "duolab_calc_title": "Duo.Lab Calc (Calculadora 3D)",
-        "duolab_calc_description": "Calculadora de precios para impresión 3D, considerando filamento, peso, tiempo de impresión, cantidad, pérdidas, accesorios, empaque, tarifas de marketplace, margen y resumen para el cliente.",
+        "duolab_calc_description": "Sistema completo para la gestión de operaciones de impresión 3D. Reúne una calculadora de costes y precios que considera materiales, tiempo de impresión, energía, depreciación, infraestructura, adicionales, embalaje, tarifas y canales de venta. También incluye un Planner para la gestión y control de pedidos de impresión 3D, organización de la producción y seguimiento de los trabajos en curso.",
 
         "nav_stacks": "Tecnologías",
         "nav_projects": "Casos de Estudio",
