@@ -1268,3 +1268,109 @@ body.light-theme .footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* EXTRA-PROJECTS-START */
+
+.projeto-card-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto-extra-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 180px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.18),
+            rgba(59, 130, 246, 0.04)
+        );
+    border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.projeto-extra-visual span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.22);
+}
+
+.projeto-card-extra > p {
+    flex: 1;
+}
+
+.projeto-extra-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 15px;
+}
+
+.projeto-extra-tags span {
+    padding: 5px 8px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.projeto-extra-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.projeto-extra-links a,
+.projeto-github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 7px 12px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 8px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.projeto-extra-links a:hover,
+.projeto-github-link:hover {
+    transform: translateY(-1px);
+    border-color: #2563eb;
+}
+
+.projeto-extra-links a:first-child {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.projeto-github-link {
+    position: relative;
+    z-index: 10;
+    width: fit-content;
+    margin-top: 14px;
+}
+
+/* EXTRA-PROJECTS-END */
