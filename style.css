@@ -2178,3 +2178,26 @@ body.light-theme .hero-photo-fallback span {
 }
 
 /* === END PORTFOLIO REDESIGN 2026 === */
+
+/* BOOTSTRAP-ICONS-PORTFOLIO */
+
+.icon,
+.metric-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-primaria);
+}
+
+.icon svg,
+.metric-icon svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.metric-icon svg {
+    width: 26px;
+    height: 26px;
+}
