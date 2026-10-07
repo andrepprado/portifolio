@@ -66,34 +66,173 @@
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <p class="tagline" data-i18n-key="tagline"></p>
-                <h2 data-i18n-key="hero_description"></h2>
-                <a href="#projects" class="btn-primary" data-i18n-key="hero_button"></a>
+                <section id="hero" class="hero hero-portfolio">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+
+            <div class="container hero-layout">
+
+                <div class="hero-copy">
+
+                    <div class="hero-status">
+                        <span class="hero-status-dot"></span>
+                        <span data-i18n-key="hero_status"></span>
+                    </div>
+
+                    <p class="hero-eyebrow" data-i18n-key="tagline"></p>
+
+                    <h2 class="hero-main-title">
+                        <span data-i18n-key="hero_title_line_1"></span>
+                        <strong data-i18n-key="hero_title_line_2"></strong>
+                    </h2>
+
+                    <p class="hero-description-new" data-i18n-key="hero_description"></p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary hero-btn-primary">
+                            <span data-i18n-key="hero_button"></span>
+                            <span aria-hidden="true">↘</span>
+                        </a>
+
+                        <a href="#contact" class="hero-btn-secondary">
+                            <span data-i18n-key="hero_contact_button"></span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-mini-metrics">
+
+                        <div class="hero-mini-metric">
+                            <strong>100+</strong>
+                            <span data-i18n-key="hero_metric_1"></span>
+                        </div>
+
+                        <div class="hero-mini-metric">
+                            <strong>238k+</strong>
+                            <span data-i18n-key="hero_metric_2"></span>
+                        </div>
+
+                        <div class="hero-mini-metric">
+                            <strong>11+</strong>
+                            <span data-i18n-key="hero_metric_3"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="hero-code-tag hero-code-tag-top">
+                        &lt;developer /&gt;
+                    </div>
+
+                    <div class="hero-photo-frame">
+
+                        <div class="hero-photo-fallback">
+                            <span>AG</span>
+                        </div>
+
+                        <img
+                            src="img/andre.png"
+                            alt="André Ghiringhelli"
+                            class="hero-photo"
+                            onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');"
+                        >
+
+                        <div class="hero-photo-gradient"></div>
+
+                        <div class="hero-photo-caption">
+                            <span>André Ghiringhelli</span>
+                            <small>Process • Development • Automation</small>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-floating-card hero-floating-card-1">
+                        <span>⚡</span>
+                        <div>
+                            <strong>Full Stack</strong>
+                            <small>Web Development</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-floating-card hero-floating-card-2">
+                        <span>↗</span>
+                        <div>
+                            <strong>Process</strong>
+                            <small>Automation</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-code-tag hero-code-tag-bottom">
+                        while(improve) { build(); }
+                    </div>
+
+                </div>
+
             </div>
+
+            <a href="#about" class="hero-scroll">
+                <span data-i18n-key="hero_scroll"></span>
+                <span>↓</span>
+            </a>
         </section>
 
-        <section id="about" class="about">
+                <section id="about" class="about about-modern">
             <div class="container">
-                <h3 data-i18n-key="about_title"></h3>
-                <p class="bio-summary" data-i18n-key="about_summary">
-                </p>
 
-                <div class="skills-grid">
+                <div class="section-heading-modern">
+                    <span class="section-number">01</span>
+                    <div>
+                        <span class="section-kicker" data-i18n-key="about_kicker"></span>
+                        <h3 data-i18n-key="about_title"></h3>
+                    </div>
+                </div>
+
+                <div class="about-layout">
+
+                    <div class="about-statement">
+                        <p data-i18n-key="about_statement"></p>
+                    </div>
+
+                    <div class="about-content">
+                        <p class="bio-summary" data-i18n-key="about_summary"></p>
+
+                        <div class="about-tags">
+                            <span>Full Stack</span>
+                            <span>UX/UI</span>
+                            <span>Python / RPA</span>
+                            <span>BPM</span>
+                            <span>SQL</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills-grid skills-grid-modern">
+
                     <div class="skill-category">
+                        <span class="skill-index">01</span>
                         <h4 data-i18n-key="skills_title_1"></h4>
                         <p data-i18n-key="skills_list_1"></p>
                     </div>
+
                     <div class="skill-category">
+                        <span class="skill-index">02</span>
                         <h4 data-i18n-key="skills_title_2"></h4>
                         <p data-i18n-key="skills_list_2"></p>
                     </div>
+
                     <div class="skill-category">
+                        <span class="skill-index">03</span>
                         <h4 data-i18n-key="skills_title_3"></h4>
                         <p data-i18n-key="skills_list_3"></p>
                     </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -188,65 +327,333 @@
         </section>
 
         <!-- Casos de Estudo -->
-        <section id="projects" class="projetos">
+                <section id="projects" class="projetos projetos-showcase">
             <div class="container">
-                <h3 data-i18n-key="projects_title"></h3>
 
-                <div class="grid-projetos">
+                <div class="section-heading-modern projects-heading">
+                    <span class="section-number">02</span>
 
-                    <a class="projeto-card" href="https://buono-cookie.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="projeto-thumb">
-                            <div class="slider-container" id="slider-buono">
-                                <img src="img/buono1.jpg" alt="Buono Cookie Slide 1" class="slide-image">
-                                <img src="img/buono2.jpg" alt="Buono Cookie Slide 2" class="slide-image">
-                                <img src="img/buono3.jpg" alt="Buono Cookie Slide 3" class="slide-image">
-                                <img src="img/buono4.png" alt="Buono Cookie Slide 4" class="slide-image">
+                    <div>
+                        <span class="section-kicker" data-i18n-key="projects_kicker"></span>
+                        <h3 data-i18n-key="projects_title"></h3>
+                        <p class="projects-intro" data-i18n-key="projects_intro"></p>
+                    </div>
+                </div>
+
+                <div class="projects-showcase-grid">
+
+                    <article class="projeto-card projeto-card-featured">
+                        <a
+                            href="https://vanessaschool.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image-link"
+                        >
+                            <div class="projeto-thumb">
+                                <img
+                                    src="img/vanessaSchool.png"
+                                    alt="Teacher Vanessa - English in Your Time"
+                                    class="project-cover"
+                                    loading="eager"
+                                >
+
+                                <div class="project-overlay">
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </div>
+
+                                <span class="project-number">01</span>
+                            </div>
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>EDTECH</span>
+                                <span>FULL STACK</span>
+                                <span>2026</span>
+                            </div>
+
+                            <h4 data-i18n-key="vanessa_title"></h4>
+                            <p data-i18n-key="vanessa_description"></p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Supabase</span>
+                                <span>PostgreSQL</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://vanessaschool.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </a>
+
+                                <a
+                                    href="https://github.com/andrepprado/vanessaschool"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub ↗
+                                </a>
                             </div>
                         </div>
-                        <h4 data-i18n-key="buono_title"></h4>
-                        <p data-i18n-key="buono_description"></p>
-                    </a>
+                    </article>
 
-                    <a class="projeto-card" href="https://www.espetinhosfc.com.br/" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="projeto-thumb">
-                            <div class="slider-container" id="slider-espetinho">
-                                <img src="img/espetinho1.png" alt="Espetinho FC Slide 1" class="slide-image">
-                                <img src="img/espetinho2.png" alt="Espetinho FC Slide 2" class="slide-image">
-                                <img src="img/espetinho3.png" alt="Espetinho FC Slide 3" class="slide-image">
+                    <article class="projeto-card">
+                        <a
+                            href="https://duolabcalc.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image-link"
+                        >
+                            <div class="projeto-thumb">
+                                <img
+                                    src="img/calculadora.png"
+                                    alt="Duo.Lab Calc"
+                                    class="project-cover"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </div>
+
+                                <span class="project-number">02</span>
+                            </div>
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>PRODUCTIVITY</span>
+                                <span>JAVASCRIPT</span>
+                            </div>
+
+                            <h4 data-i18n-key="duolab_calc_title"></h4>
+                            <p data-i18n-key="duolab_calc_description"></p>
+
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>Firestore</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://duolabcalc.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </a>
+
+                                <a
+                                    href="https://github.com/andrepprado/Calculadora-3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub ↗
+                                </a>
                             </div>
                         </div>
-                        <h4 data-i18n-key="espetinho_title"></h4>
-                        <p data-i18n-key="espetinho_description"></p>
-                    </a>
+                    </article>
 
-                    <a class="projeto-card" href="https://chale-gabi.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="projeto-thumb">
-                            <div class="slider-container" id="slider-chale-gabi">
-                                <img src="img/chale-gabi-1.png" alt="Chalé Gabi Slide 1" class="slide-image">
-                                <img src="img/chale-gabi-2.png" alt="Chalé Gabi Slide 2" class="slide-image">
-                                <img src="img/chale-gabi-3.png" alt="Chalé Gabi Slide 3" class="slide-image">
+                    <article class="projeto-card">
+                        <a
+                            href="https://chale-gabi.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image-link"
+                        >
+                            <div class="projeto-thumb">
+                                <img
+                                    src="img/chaleGabi.png"
+                                    alt="Chalé Gabi Paiol Grande"
+                                    class="project-cover"
+                                    loading="lazy"
+                                >
+
+                                <div class="project-overlay">
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </div>
+
+                                <span class="project-number">03</span>
+                            </div>
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>HOSPITALITY</span>
+                                <span>LANDING PAGE</span>
+                            </div>
+
+                            <h4 data-i18n-key="chale_gabi_title"></h4>
+                            <p data-i18n-key="chale_gabi_description"></p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>UX/UI</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://chale-gabi.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </a>
+
+                                <a
+                                    href="https://github.com/andrepprado/ChaleGabiPaiolAlto"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub ↗
+                                </a>
                             </div>
                         </div>
-                        <h4 data-i18n-key="chale_gabi_title"></h4>
-                        <p data-i18n-key="chale_gabi_description"></p>
-                    </a>
+                    </article>
 
-                    <a class="projeto-card" href="https://duolabcalc.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="projeto-thumb">
-                            <div class="slider-container" id="slider-duolab-calc">
-                                <img src="img/duolab-calc-1.png" alt="Duo.Lab Calc Slide 1" class="slide-image">
+                    <article class="projeto-card">
+                        <a
+                            href="https://buono-cookie.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-image-link"
+                        >
+                            <div class="projeto-thumb">
+                                <img
+                                    src="img/buono.png"
+                                    alt="Buono Cookie"
+                                    class="project-cover"
+                                    loading="lazy"
+                                >
 
+                                <div class="project-overlay">
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </div>
+
+                                <span class="project-number">04</span>
+                            </div>
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>ECOMMERCE</span>
+                                <span>UX/UI</span>
+                            </div>
+
+                            <h4 data-i18n-key="buono_title"></h4>
+                            <p data-i18n-key="buono_description"></p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>WhatsApp</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    href="https://buono-cookie.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span data-i18n-key="project_live_cta"></span>
+                                </a>
+
+                                <a
+                                    href="https://github.com/andrepprado/buono-cookie"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub ↗
+                                </a>
                             </div>
                         </div>
-                        <h4 data-i18n-key="duolab_calc_title"></h4>
-                        <p data-i18n-key="duolab_calc_description"></p>
-                    </a>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-thumb">
+                            <img
+                                src="img/ferramentasCredito.png"
+                                alt="Ferramentas de Crédito"
+                                class="project-cover"
+                                loading="lazy"
+                            >
+
+                            <span class="project-number">05</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>FINTECH</span>
+                                <span>PROCESS</span>
+                            </div>
+
+                            <h4 data-i18n-key="credito_title"></h4>
+                            <p data-i18n-key="credito_description"></p>
+
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>Processos</span>
+                                <span>UX/UI</span>
+                                <span>Crédito</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-thumb">
+                            <img
+                                src="img/viagenSantiago.png"
+                                alt="Planejador de viagem para Santiago"
+                                class="project-cover"
+                                loading="lazy"
+                            >
+
+                            <span class="project-number">06</span>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span>TRAVEL</span>
+                                <span>WEB APP</span>
+                            </div>
+
+                            <h4 data-i18n-key="viagem_title"></h4>
+                            <p data-i18n-key="viagem_description"></p>
+
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>LocalStorage</span>
+                                <span>UX/UI</span>
+                            </div>
+                        </div>
+                    </article>
 
                 </div>
+
+                <div class="github-portfolio-cta">
+                    <span data-i18n-key="github_more_projects"></span>
+
+                    <a
+                        href="https://github.com/andrepprado"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        github.com/andrepprado ↗
+                    </a>
+                </div>
+
             </div>
         </section>
 

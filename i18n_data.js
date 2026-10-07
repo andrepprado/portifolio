@@ -519,3 +519,139 @@ const translations = {
         "contact_linkedin_label": "LinkedIn",
     }
 };
+
+/* === PORTFOLIO REDESIGN TRANSLATIONS === */
+
+Object.assign(translations["pt-BR"], {
+    hero_status: "Disponível para novos desafios",
+    tagline: "PROCESSOS • DESENVOLVIMENTO • AUTOMAÇÃO",
+    hero_title_line_1: "Eu transformo",
+    hero_title_line_2: "ideias em produto.",
+    hero_description: "Analiso processos, desenvolvo produtos digitais e automatizo operações. Tecnologia aplicada para resolver problemas reais, reduzir trabalho manual e criar experiências melhores.",
+    hero_button: "Explorar projetos",
+    hero_contact_button: "Falar comigo",
+    hero_scroll: "Conheça meu trabalho",
+    hero_metric_1: "processos publicados",
+    hero_metric_2: "registros processados",
+    hero_metric_3: "anos em tecnologia",
+
+    about_kicker: "Perfil profissional",
+    about_title: "Mais que código.",
+    about_statement: "Tecnologia faz mais sentido quando <strong>resolve um problema real.</strong>",
+
+    projects_kicker: "Trabalhos selecionados",
+    projects_title: "Projetos que saíram do papel.",
+    projects_intro: "Produtos digitais criados para educação, negócios, hospitalidade, impressão 3D, produtividade e otimização de processos.",
+
+    vanessa_title: "English in Your Time — Teacher Vanessa",
+    vanessa_description: "Plataforma de ensino de inglês com área do aluno, trilha estruturada por níveis CEFR, exercícios interativos, progresso, XP, conquistas, revisão personalizada e gestão administrativa.",
+
+    credito_title: "Ferramentas de Crédito",
+    credito_description: "Interface criada para apoiar análise e operação de crédito, organizando informações e transformando regras de negócio em uma experiência mais clara e eficiente.",
+
+    viagem_title: "Santiago — Planejador de Viagem",
+    viagem_description: "Aplicação web para organizar uma viagem a Santiago, reunindo cotação CLP/BRL, controle de gastos e informações da viagem em uma única experiência.",
+
+    github_more_projects: "Mais experimentos, códigos e projetos disponíveis no GitHub."
+});
+
+Object.assign(translations["en"], {
+    hero_status: "Available for new challenges",
+    tagline: "PROCESS • DEVELOPMENT • AUTOMATION",
+    hero_title_line_1: "I transform",
+    hero_title_line_2: "ideas into products.",
+    hero_description: "I analyze processes, build digital products and automate operations. Technology applied to solve real problems, reduce manual work and create better experiences.",
+    hero_button: "Explore projects",
+    hero_contact_button: "Contact me",
+    hero_scroll: "Discover my work",
+    hero_metric_1: "published processes",
+    hero_metric_2: "processed records",
+    hero_metric_3: "years in technology",
+
+    about_kicker: "Professional profile",
+    about_title: "More than code.",
+    about_statement: "Technology makes more sense when it <strong>solves a real problem.</strong>",
+
+    projects_kicker: "Selected work",
+    projects_title: "Projects brought to life.",
+    projects_intro: "Digital products created for education, business, hospitality, 3D printing, productivity and process optimization.",
+
+    vanessa_title: "English in Your Time — Teacher Vanessa",
+    vanessa_description: "English learning platform with student area, CEFR learning path, interactive exercises, progress tracking, XP, achievements, personalized review and administration.",
+
+    credito_title: "Credit Tools",
+    credito_description: "Interface designed to support credit analysis and operations, organizing information and transforming business rules into a clearer and more efficient experience.",
+
+    viagem_title: "Santiago — Travel Planner",
+    viagem_description: "Web application for organizing a trip to Santiago, combining CLP/BRL exchange rates, expense tracking and travel information in a single experience.",
+
+    github_more_projects: "More experiments, code and projects available on GitHub."
+});
+
+Object.assign(translations["pt-PT"], {
+    hero_status: "Disponível para novos desafios",
+    tagline: "PROCESSOS • DESENVOLVIMENTO • AUTOMAÇÃO",
+    hero_title_line_1: "Transformo",
+    hero_title_line_2: "ideias em produtos.",
+    hero_description: "Analiso processos, desenvolvo produtos digitais e automatizo operações. Tecnologia aplicada para resolver problemas reais, reduzir trabalho manual e criar melhores experiências.",
+    hero_button: "Explorar projetos",
+    hero_contact_button: "Contactar",
+    hero_scroll: "Conheça o meu trabalho",
+    hero_metric_1: "processos publicados",
+    hero_metric_2: "registos processados",
+    hero_metric_3: "anos em tecnologia",
+
+    about_kicker: "Perfil profissional",
+    about_title: "Mais do que código.",
+    about_statement: "A tecnologia faz mais sentido quando <strong>resolve um problema real.</strong>",
+
+    projects_kicker: "Trabalhos selecionados",
+    projects_title: "Projetos que ganharam vida.",
+    projects_intro: "Produtos digitais criados para educação, negócios, alojamento, impressão 3D, produtividade e otimização de processos.",
+
+    vanessa_title: "English in Your Time — Teacher Vanessa",
+    vanessa_description: "Plataforma de aprendizagem de inglês com área do aluno, percurso CEFR, exercícios interativos, progresso, XP, conquistas, revisão personalizada e administração.",
+
+    credito_title: "Ferramentas de Crédito",
+    credito_description: "Interface criada para apoiar a análise e operação de crédito, organizando informação e transformando regras de negócio numa experiência mais clara e eficiente.",
+
+    viagem_title: "Santiago — Planeador de Viagem",
+    viagem_description: "Aplicação web para organizar uma viagem a Santiago, reunindo cotação CLP/BRL, controlo de despesas e informação da viagem numa única experiência.",
+
+    github_more_projects: "Mais experiências, código e projetos disponíveis no GitHub."
+});
+
+Object.assign(translations["es"], {
+    hero_status: "Disponible para nuevos desafíos",
+    tagline: "PROCESOS • DESARROLLO • AUTOMATIZACIÓN",
+    hero_title_line_1: "Transformo",
+    hero_title_line_2: "ideas en productos.",
+    hero_description: "Analizo procesos, desarrollo productos digitales y automatizo operaciones. Tecnología aplicada para resolver problemas reales, reducir trabajo manual y crear mejores experiencias.",
+    hero_button: "Explorar proyectos",
+    hero_contact_button: "Contactarme",
+    hero_scroll: "Conoce mi trabajo",
+    hero_metric_1: "procesos publicados",
+    hero_metric_2: "registros procesados",
+    hero_metric_3: "años en tecnología",
+
+    about_kicker: "Perfil profesional",
+    about_title: "Más que código.",
+    about_statement: "La tecnología tiene más sentido cuando <strong>resuelve un problema real.</strong>",
+
+    projects_kicker: "Trabajos seleccionados",
+    projects_title: "Proyectos que cobraron vida.",
+    projects_intro: "Productos digitales creados para educación, negocios, hospitalidad, impresión 3D, productividad y optimización de procesos.",
+
+    vanessa_title: "English in Your Time — Teacher Vanessa",
+    vanessa_description: "Plataforma de aprendizaje de inglés con área del alumno, ruta CEFR, ejercicios interactivos, progreso, XP, logros, revisión personalizada y administración.",
+
+    credito_title: "Herramientas de Crédito",
+    credito_description: "Interfaz creada para apoyar el análisis y la operación de crédito, organizando información y transformando reglas de negocio en una experiencia más clara y eficiente.",
+
+    viagem_title: "Santiago — Planificador de Viaje",
+    viagem_description: "Aplicación web para organizar un viaje a Santiago, reuniendo cotización CLP/BRL, control de gastos e información del viaje en una sola experiencia.",
+
+    github_more_projects: "Más experimentos, código y proyectos disponibles en GitHub."
+});
+
+/* === END PORTFOLIO REDESIGN TRANSLATIONS === */
